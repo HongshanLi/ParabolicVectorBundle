@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\declaretheorem{question}
+\declaretheorem{lemma}
+\begin{document}
+\newcommand{\V}{\mathcal{V}}
+\section{Better description of the orbifold bundle corresponding a parabolic bundle in case of 
+the VSH}
+Let $X$ be a smooth projective $\complex$-variety, let $D$ be a normal crossing divisor on $X$. 
+Let $\V$ be a VHS on $U := X - D$. Let $V$ be the Deligne canonical extension of $\V$.
+Then, by a theorem of Schmid, the Hodge filtration $F$ on $\V$ extends to a filtration on $V$.
+Take associated graded of the connection
+\[
+    \nabla : V \rightarrow \Omega_X(\log D)\otimes V
+\]
+We get a $O_X$-linear map
+\[
+    \theta : E \rightarrow \Omega_X(\log D)\otimes E
+\]
+Since $\nabla$ is integral, $(E, \theta)$ is a Higgs bundles. 
+In case that the monodromy of $\V$ is unipotent, the parabolic structure on $E$ is trivial.
+However, if we monodromy of $\V$ is only quasi-unipotent, $E$ will have non-trival parabolic 
+structure.  
+
+\begin{question}
+Is there a better description of the orbifold bundle corresponding to $E$?
+\end{question}
+
+Let $p: Y \rightarrow X$ be the cyclic covered branched over $D$ such that we can construct an
+orbifold bundle $W$ (equivariant bundle) on $Y$, corresponding to the parabolic bundle $E$ on $X$.
+Then, $Y$ should have a better description in this case: pull-back the local system $\V$, and take
+the Deligne canonical extension.
+
+\subsection{Defining a parabolic structure on Deligne canonical extension}
+\newcommand{\Res}{\text{Res}}
+Assume $D$ is irreducible and smooth. We have a map
+\[
+    \Res\circ\nabla : V \rightarrow V|_D
+\]
+$V\otimes O_X(-D)$ is contained in the kernel of $\Res\circ\nabla$. So $\Res\circ\nabla$ defines an
+endomorphism
+\[
+    \phi: V|_D \rightarrow V|_D
+\]
+
+\subsection{Main ideas}
+Think of $V$ as a parabolic bundle on $X$. 
+Let $V^\prime$ denote the Deligne canonical extension of $\inverse{p}\V$.
+To show the orbifold bundle on $Y$ corresponding to the parabolic bundle $V$ on X, we show that
+\[
+    (\pushforward{p}V)^{\Gamma} = V
+\]
+Several things to prove 
+\begin{lemma}
+The action $\Gamma$ on $Y$ lifts to a compatible action on $V^\prime$ which makes $V^\prime$ an orbifold 
+bundle.
+\end{lemma}
+\begin{proof}
+Assume $X$ is a curve, and $D \subset X$ is a point. 
+Let $T$ be the monodromy of $\V$. Suppose $T^N$ is unipotent.
+Let $p: Y \rightarrow X$ be the cyclic cover of degree $N$ 
+branched over $D$. Then the monodromy of $\inverse{p}\V$ is unipotent.
+Let $\tilde{D} = \inverse{p}(D)$. Then,
+\[
+    p: Y - \tilde{D} \rightarrow X - D
+\]
+is etale, and we have the following commutative diagram
+\[
+\begin{tikzcd}
+    & U \arrow{ld} \arrow{dr} &\\
+Y - \tilde{D} & \arrow{r} & X - D
+\end{tikzcd}
+\]
+where $U$ is the universal cover of $X - D$. 
+Let $\tilde{\Delta}$ and $\Delta$ be small disks around $\tilde{D}$ and $D$ respectively.
+Then, locally, the above diagram looks like
+\[
+\begin{tikzcd}
+    & \mathbb{H} \arrow{ld} \arrow{dr} & \\
+\tilde{\Delta}^* & \arrow{r} & \Delta^*
+\end{tikzcd}
+\]
+Let $\tilde{z}$ and $z$ be the local analytic coordinates on $\tilde{\Delta}$ and $\Delta$,
+and let $t$ be the coordinate on $\mathbb{H}$. Then, we have
+\[
+    \tilde{z} = e^{\frac{2\pi it}{N}}, z = e^{2\pi i t}
+\]
+Suppose $V^\prime$ has rank $r$. Let $e_1,\cdots, e_r$ be the standard basis of $\complex^r$.
+Let $s_i$ be the multivalued functions on $\tilde{\Delta}$ such that pullback of $s_i$ to the 
+universal cover looks like
+\[
+    t \mapsto e^{Mt}e_i
+\]
+where $M = -\log T^N$. Then, we use $s_1,\cdots,s_r$ to trivialize $V^\prime$ over $\tilde{D}$
+\[
+    V^\prime |_{\tilde{\Delta}} \cong \bigoplus\limits_{i=1}^{r} O_{\tilde{\Delta}}s_i
+\]
+
+$\Gamma$ acts on $s_i$. Hence, $\Gamma$ acts on $V^\prime$.
+
+
+\end{proof}
+  
+
+
+ 
+
+
+\section{Perturb parabolic structure with weights in $\real$ to parabolic structure with weights in 
+$\rational$}
+Let $X$ be a smooth projective $\complex$-variety, and let $D$ be a normal crossing divisor on $X$.
+Let $E$ be a parabolic bundle with weights $0 \leq \alpha_1 < \alpha_2 < \cdots < \alpha_l <1$. 
+In case that $\alpha_i \in \rational$, we can construct an orbifold bundle on some branched cover over $X$.
+In case that $\alpha_i \in \real$, what do we do? The natural thing is to perturb $\alpha_i$ a little bit
+to bring them back to $\rational$. Let $Pb()$ be the pertabation operation (there is no reason to believe 
+this operation is canonical). Several things should happen\newline
+\begin{itemize}
+\item There should be a sequence $Pb_{\epsilon}()$ such that $\epsilon \rightarrow 0$ and
+    $Pb_0() = \text{id}$
+\item parabolic chern classes of $E$ should be equal to parabolic chern classes of $Pb(E)$
+\item If $E$ is a Higgs sheaf with Higgs field $\theta$ such that 
+    \[
+        \hypercohomology{i}{X}{\text{DR}(Pb_{\epsilon}(E, \theta))} = 0
+    \]
+    then, it should happen that
+    \[
+        \hypercohomology{i}{X}{\text{DR}(Pb_{0}(E, \theta))} = 0
+    \]
+\end{itemize}
+\begin{question}
+What would be a operator $Pb$ so that everything above is true?
+\end{question}
+
+\end{document} 

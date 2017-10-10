@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\begin{document}
+\section{Notes From \emph{Parabolic Bundles as Orbifold Bundles} Biswas}
+\subsection{Some interpretations on $V_i$ and $\bar{V_i}$ of section 3}
+\newcommand{\with}{\text{ with }}
+\newcommand{\on}{\text{ on }}
+\renewcommand{\or}{\text{ or }}
+There is an inclusion of schemes
+\[
+    k(N - m_l)\tilde{D} \hookrightarrow k(N - m_{l-1})\tilde{D}
+\]
+In general, it is more likely for a function to vanish on a thinner scheme. 
+
+
+\[
+    V_{l+1} = \{ s \in \pullback{p}\otimes O_X(D) \with
+        s = 0 \on k(N - m_l)\tilde{D}
+        \or s \in \pullback{p}(F_{l+1}(E|_D\otimes O_X(D))\}
+\]
+with the notation of the paper, $F_{l+1}(E|_D) = 0$
+
+\[
+    V_l = \{ s \in \pullback{p}(E|_D\otimes O_X(D)) \with
+        s = 0 \on k(N - m_{l-1})\tilde{D} 
+        \or s \in \pullback{p}(F_l(E|_D)\otimes O_X(D))\}
+\]
+
+So
+\[
+    V_{l+1}\cap V_l = \{ s \in \pullback{p}(E|_D\otimes O_X(D)) \with
+        s = 0 \on k(N - m_l) 
+        \or s \in \pullback{p}(F_l(E|_D)\otimes O_X(D)\}
+\]
+and
+\begin{align}
+    V_{l+1}/(V_{l+1}\cap V_l) = &
+        \{ s \in \pullback{p}(E|_D\otimes O_X(D)) \with
+         s = 0 \on k(N - m_l)\tilde{D} -  k(N - m_{l-1})\tilde{D}\} \\
+    &\text{modulo } \pullback{p}(F_l(E|_D)\otimes O_X(D))
+\end{align}
+
+
+
+\end{document}
