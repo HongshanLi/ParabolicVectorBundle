@@ -1,0 +1,189 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\ceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\renewcommand{\vector}[2]{
+\left[\begin{array}{c}
+    {#1} \\
+    {#2}
+    \end{array}\right]
+}
+\renewcommand{\matrix}[4]{
+\left[\begin{array}{cc}
+    {#1} & {#2} \\
+    {#3} & {#4}
+    \end{array}\right]
+}
+\begin{document}
+
+Let $X$ be a complex manifold, 
+and let $D \subset X$ be a normal crossing divisor.
+\newcommand{\V}{\mathcal{V}}
+Let $\V$ be a quasi-unipotent local sytem on $X - D$. 
+Then, the canonical extension $V_X$ of $\V$ has nontrivial parabolic structure.
+Let $p: Y \rightarrow X$ be a branched cyclic cover such that $\inverse{p}\V$ is
+unipotent. Then, we will show that the orbifold bundle on $Y$ corresponding to $V_X$
+is the canonical extension of $\inverse{p}\V$. 
+
+I will use the following example to illutrate the ideas. 
+Let $X = \Delta$, $D$ be the origin, and $\V = (\mathbb{Z}^2, T)$,
+where $T$ is the diagonal quasi-unipotent matrix
+\[
+    T = \left[\begin{array}{cc}
+        \epsilon_3 & 0 \\
+        0 & \epsilon_5 \\
+        \end{array}\right]
+\]
+where $\epsilon_i$ is a primitive $i$-th root of unity. 
+
+\section{Construction of the canonical extension of $\V$}
+In this note, by canonical extension, we mean the extension $(V, \nabla)$ of $\V$
+such that the eigenvalues of $\text{Res}(\nabla)$ lie in $[0, 1)$
+
+Let 
+\[
+    M = -\log T = - \left[\begin{array}{cc}
+                       \log \epsilon_1 & 0\\
+                        0 & \log \epsilon_5
+                        \end{array}\right]
+\]
+And we use the branch one step before the principal branch for both log functions, \emph{i.e.}
+\[
+    M = -\left[\begin{array}{cc}
+            \frac{2\pi i}{3} - 2\pi i & 0 \\
+            0 & \frac{2\pi i}{5} - 2\pi i
+            \end{array}\right]
+\]
+Let $\mathbb{H} \rightarrow \Delta^*$ be the universal covering map. Let $z$ and $t$ be 
+the coordinate on $\Delta$ and $t$, we have $z = \exp{2\pi it}$. 
+Let $<e_1, e_2>$ be the standard basis for $\mathbb{Z}^2$. Consider the vector valued 
+functions on $\mathbb{H}$
+\[
+    s_1(t) = \exp(Mt)\otimes e_1, s_2(t) = \exp(Mt)\otimes e_2
+\]
+\emph{i.e.}
+\[
+    s_1(t) = \vector{\exp{\frac{4\pi it}{3}}}{0}
+    s_2(t) = \vector{0}{\exp{\frac{8\pi it}{5}}}
+\]
+
+Use $z = \exp{2\pi it}$, we can regard $s_1$ and $s_2$ as multi-valued functions on $\Delta^*$
+\[
+    s_1(x) = \vector{x^{\frac{2}{3}}}{0},
+    s_2(x) = \vector{0}{x^{\frac{4}{5}}}
+\]
+
+
+Let $V = O_X\cdot s_1(x)\oplus O_X\cdot s_2(x)$.
+Define $\nabla : V \rightarrow V\otimes\Omega_X(\log D)$, such that the connection matrix
+is given by
+\[
+    \frac{M}{2\pi i}\cdot\frac{dx}{x}
+\]
+Then,
+\[
+    \text{Res}(\nabla) = \left[\begin{array}{cc}
+                            \frac{2}{3} & 0 \\
+                            0 & \frac{4}{5}
+                            \end{array}\right]
+\]
+This verifies that the $(V, \nabla)$ is the canonical extension of $\V$.
+Use $<e_1, e_2>$ as the standard basis of $\mathbb{Z}^2$, the inclusion map
+$\V \rightarrow V|_{\Delta^*}$ is given by
+\[
+    e_1 \mapsto x^{-\frac{1}{3}}s_1, e_2 \mapsto x^{-\frac{4}{5}}s_2
+\]
+And we can check that the images of $e_1$ and $e_2$ are indeed flat sections of $\nabla$.
+
+
+\subsection{The action of $x$ on $V_X$}
+This section will explain how $x$ acts on $V_X$ and send $V_X$ to an extension of $\V$ whose
+residue has eigenvalues in $[1, 2)$. We will this action latter to explain why the morphism
+I talked about in our last meeting is a morphism of \emph{parabolic} bundles.
+
+$x$ has a natural action on $s_1$ and $s_2$
+\[
+    x\cdot s_1 = \vector{x^{\frac{4}{3}}}{0},
+    x\cdot s_2 = \vector{0}{x^{\frac{9}{5}}}
+\]
+
+We would have ended up those sections if we used $-4\pi i$ branch for our $M$. More precisely,
+if we set 
+\[
+    M = - \matrix{\frac{2\pi i}{3} - 4\pi i}{0}{0}{\frac{2\pi i}{5} - 4\pi i}
+\]
+at the very begining. Then, we will get an extention $(V^1, \nabla^1)$ with the generating 
+sections
+\[
+    x\cdot s_1 \text{and} x\cdot s_1
+\]
+The connection $\nabla^1$ is defined by
+\[
+    \frac{M}{2\pi i}\cdot\frac{dx}{x}
+\]
+So
+\[
+    \text{Res}(\nabla) = \matrix{\frac{4}{3}}{0}{0}{\frac{9}{5}}
+\]
+
+\subsection{The parabolic structure on $V_X$}
+$\text{Res}(\nabla)$ defines an endomorphism of $V_X|_D$, the parabolic structure is given
+by the generalized eigenspaces of this endomorphism. In our example, the story is quite 
+simple. The eigenvalues of $\text{Res}(\nabla)$ are $\frac{2}{3}$ and $\frac{4}{5}$, 
+the corresponding eigenspaces are $\complex\cdot s_1$ and $\complex\cdot s_2$. 
+The filtration on $V_X$ is
+\[
+    V_X = F_1 \supset F_2 = O_X\cdot s_2 \supset V_X(-D)
+\]
+and the weights are $\frac{2}{3}, \frac{4}{5}$. 
+
+
+\section{On the branch Cover}
+Let $p : Y \rightarrow X$ be the branched coverd defined by $y^{15} = x$. 
+Let $\Gamma$ be the Galois group of this covering map.
+Then, $\inverse{p}\V = (\mathbb{Z}^2, T^{15})$ is the trivial local system on $Y$.
+So the canonical extension $V_Y$ of $\inverse{p}\V$ is the trivial bundle with the trivial 
+connection, \emph{i.e.}
+\[
+    V_Y = O_Y\cdot e_1 \oplus O_Y\cdot e_2
+\]
+where $<e_1, e_2>$ is the standard basis of $\integer^2$. The connection $\nabla_Y$ on $V_Y$
+has the trivial connection matrix.
+
+$V_Y$ inherits an $\Gamma$-action from $O_Y$, and clearly this makes $V_Y$ into an equivariant
+bundle. 
+
+\textbf{The $\Gamma$-invariant part of $\pushforward{p}V_Y$}\newline
+$e_1$ and $e_2$ are constant sections on $Y$, so $\Gamma$ has trivial action on them.
+So to compute $(\pushforward{p}V_Y)^{\Gamma}$, we only need to compute 
+$(\pushforward{p}O_Y)^{\Gamma}$. As an $O_X$-module, $\pushforward{p}O_Y$ looks like
+\[
+    O_X\cdot 1 \oplus O_X\cdot y \oplus O_X\cdot y^2 \cdots \oplus O_X\cdot y^{14}
+\]
+where $y$ is a local coordinate on $Y$. Each $y^i$ has a nontrivial $\Gamma$-action,
+\emph{i.e.} if $g$ is a generator of $\Gamma$, then $g\cdot y^i = (g\cdot y)^i$.
+So the only $\Gamma$-invariant part of $\pushforward{p}O_Y$ is $O_X\cdot 1$. Hence,
+\[
+    (\pushforward{p}V_Y)^{\Gamma} = O_X\cdot e_1 \oplus O_X\cdot e_2
+\]
+\newcommand{\invariant}{(\pushforward{p}V_Y)^{\Gamma}}
+\textbf{The morphism $\alpha: \invariant \rightarrow V_X$}\newline
+It is natural to define $\alpha$ as
+\[
+    e_1 \mapsto s_1, e_2 \mapsto s_2
+\]
+\newcommand{\tD}{\tilde{D}} 
+Let $\tD = \inverse{p}D$. The parabolic structure on $\invariant$ is given by
+\[
+    \invariant_t = (\pushforward{p} V_Y\otimes O_Y(\floor*{t\tD}))^{\Gamma}
+\]
+
+    
+
+  
+
+
+\end{document}
+                
