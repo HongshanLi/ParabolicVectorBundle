@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\begin{document}
+\begin{theorem}[Kawamata's cyclic cover construction]
+Let $X$ be a smooth projective complex variety, $D\subset X$ a normal crossing divisor. 
+Let $D = \sum\limits_{i=1}^{k}D_i$ be the decomposation of $D$ into irreducible components.
+Let $m_i$ be positive integers for $i = 1,\cdots, k$. Then, there exists a finite surjective
+morphism $p: \tilde{X}\rightarrow X$ satisfying the following conditions
+\begin{enumerate}
+\item $\tilde{X}$ is smooth.
+\item $\tilde{D} := \pullback{p}(D)_{\text{red}}$ is a normal crossing divisor on $\tilde{X}$.
+\item Let $\pullback{D_i} = \sum\limits_{j}m_{ij}\tilde{D}_j$ be the decomposation into irreducible
+compoments. Then, $m_i | m_{ij}$
+\end{theorem}
+
+\begin{corollary}[Local description of the cyclic cover map]
+Let $D$ be a smooth irreducible divisor of $X$. Let $p: \tilde{X} \rightarrow X$ be the cyclic 
+covering map branched over $D$ of degree $m$. Write $\tilde{D} = (\pullback{p}D)_{\text{red}}$.
+Let $x \in D$ and $y \in \tilde{D}$ such that $p(y) = x$. Then, locally near $y$ and $x$, we can
+find analytic neighborhoods $U$ and $V$ with coordinates $(y_1,\cdots,y_d)$ and $(x_1,\cdots,x_d)$
+such that $p(U)\subset V$, and with respect to the coordinate systems, $p$ can be described as
+\begin{align*}
+    x_1 & = y_1^m \\
+    x_2 & = y_2 \\
+        & \vdots \\
+    x_d & = y_d 
+\end{align*}
+\newcommand{\V}{\mathcal{V}}
+
+\textbf{Simple case of Biswas' Correspondence} 
+Consider the simple case when the normal crossing divisor on $X$ has only one compoment.
+Let $D$ be a smooth irreducible divisor of $X$. Let $\V$ be a quasi-unipotent local system on
+$X - D$. Let $V$ be the canonical extension of $\V$. If the monodromy of $\V$ is not unipotent, then $V$
+will have nontrivial parabolic structure. 
+Let $T$ be the monodromy of $\V$ around $D$. Let $m_1 \in \mathbb{N}$ such that $T^{m_1}$
+is unipotent. Let $p: \tilde{X} \rightarrow X$ be the cyclic 
+covering map branched over $D$ of degree $m$, such that $m_1 | m$.  
+Write $\tilde{D} = (\pullback{p}D)_{\text{red}}$.
+

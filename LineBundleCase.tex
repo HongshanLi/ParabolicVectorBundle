@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\begin{document}
+
+In this note, we will consider the canonical extension of a
+quasi-unipotent local syetem of rank 1, \emph{i.e.} root of unity.
+We will use a simple example to justify the idea that the equivariant bundle
+on the branched cover is the canonical extension of the pullback of the local system.
+
+\newcommand{\V}{\mathcal{V}}
+Let $X = \Delta$ be the unit disk, $D \subset X$ be the origin.
+Consider the local system $\V$ on $\Delta^*$ given by $(\integer, T)$, where 
+$T = \epsilon^3_{10} = \exp{\frac{6\pi i}{10}}$. Let $x$ be the coordinate on $\Delta$.
+Then, the canonical extension $(V, \nabla)$ of $\V$ is $L = O_X\otimes x^{3/10}$. 
+The connection matrix of $\nabla$ is given by $\frac{3}{10}\frac{dx}{x}$, 
+and the inclusion map 
+\[
+    \V \rightarrow L
+\]
+is given by $e_1 \mapsto x^{-1/3}\otimes x^{1/3}$.
+
+Let $p: Y \rightarrow X$ be the branched cyclic cover defined by $y^10 = x$.
+$\inverse{p}\V$ is the trivial local system, so its canonical extension is the
+trivial line bundle with trivial connection. I will recover the trivial line bundle
+on $Y$ using Biswas's construction of orbifold bundle. 
+
+Use Biswas's notation. The parabolic structure of $L$ is given by
+\[
+    L = F_1(L) \subset F_2(L) = L\otimes O_X(-D)
+\]
+the weight is $3/10$. 
+
+\newcommand{\tD}{\tilde{D}}
+Let $f_2 : (10 - 3)\tD \rightarrow n\tD$ be the inclusion of schemes. 
+Let $\bar{V}_2$ be the restriction of $\pullback{p}(L|_D/F_2(L|_D))\otimes O_X(D)$ to the 
+scheme $(10 - 3)\tD$.
+But in our case, $F_2(L|_D) = 0$. So $\bar{V}_2$ is the restriction of 
+$\pullback{p}(L|_D\otimes O_X(D))$ to the scheme $(10 - 3)\tD$. We will be done once
+we write down the generators of $\bar{V}_2$ as a $\complex$-vector space.
+
+$L|_D = \complex\otimes x^{3/10}$.
+
+$\pullback{p}L|_D = \complex\otimes y^3$.
+
+$\pullback{p}O_X(D) = O_Y\otimes y^{-10}$.
+
+Restriction of $\pullback{p}O_X(D)$ to $(10 - 3)\tD$ is
+$\complex<1\otimes y^{-10}, y\otimes y^{-10}, \cdots, y^6\otimes y^{-10}>$
+ 
+So $\bar{V}_2 = \complex<1\otimes y^{-7}, y\otimes y^{-7}, \cdots, y^6\otimes y^{-7}>$
+
+Now, consider the exact sequence
+\[
+    0 \rightarrow V_2 \rightarrow V \rightarrow \bar{V} \rightarrow 0 
+\]
+Use Biswas's algorithm in our case, we know that $V_2$ is the orbifold bundle corresponding
+to $L$. And according to our description of $\bar{V}_2$, we know that
+\[
+    V_2 = O_Y y^7\otimes y^{-7}
+\]
+Then, it is obvious how to think of $V_2$ as a trivial line bundle.
+
+\end{document}
+ 
