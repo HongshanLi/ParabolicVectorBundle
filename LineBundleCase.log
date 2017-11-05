@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.12)  16 OCT 2017 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.12)  1 NOV 2017 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,32 +311,32 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip58
 \dth@everypar=\toks26
 )
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/thmtools.sty
-Package: thmtools 2014/04/21 v66
-\thmt@toks=\toks27
-\c@thmt@dummyctr=\count191
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/thm-patch.st
-y
-Package: thm-patch 2014/04/21 v66
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/oberdiek/refcount.sty
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/parseargs.st
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/ltxcmds.st
 y
-Package: parseargs 2014/04/21 v66
-\@parsespec=\toks28
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/infwarerr.
+sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 ))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/thm-kv.sty
-Package: thm-kv 2014/04/21 v66
-Package thm-kv Info: Theorem names will be uppercased on input line 40.
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/gettitlest
+ring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/oberdiek/kvoptions.st
+y
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.
 sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/infwarerr.
-sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/etexcmds.s
 ty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
@@ -350,50 +350,8 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))
-Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 156.
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/thm-autoref.
-sty
-Package: thm-autoref 2014/04/21 v66
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/aliasctr.sty
-Package: aliasctr 2014/04/21 v66
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/carlisle/remreset.sty
-)))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/thm-listof.s
-ty
-Package: thm-listof 2014/04/21 v66
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/thm-restate.
-sty
-Package: thm-restate 2014/04/21 v66
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/thmtools/thm-amsthm.s
-ty
-Package: thm-amsthm 2014/04/21 v66
-\thmt@style@headstyle=\toks29
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/oberdiek/refcount.sty
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/ltxcmds.st
-y
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/oberdiek/gettitlest
-ring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/oberdiek/kvoptions.st
-y
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-))
-\c@section@level=\count192
+))))
+\c@section@level=\count191
 LaTeX Info: Redefining \ref on input line 355.
 LaTeX Info: Redefining \pageref on input line 355.
 )
@@ -448,12 +406,12 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen155
-\Hy@linkcounter=\count193
-\Hy@pagecounter=\count194
+\Hy@linkcounter=\count192
+\Hy@pagecounter=\count193
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count195
+\Hy@SavedSpaceFactor=\count194
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/latexconfig/hyperref.
 cfg
@@ -466,14 +424,14 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count196
+\c@Hy@tempcnt=\count195
  (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen156
-\Fld@menulength=\count197
+\Fld@menulength=\count196
 \Field@Width=\dimen157
 \Fld@charsize=\dimen158
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -485,17 +443,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count198
-\c@Item=\count199
-\c@Hfootnote=\count266
+\Hy@abspage=\count197
+\c@Item=\count198
+\c@Hfootnote=\count199
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count267
-\c@bookmark@seq@number=\count268
+\Fld@listcount=\count266
+\c@bookmark@seq@number=\count267
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/oberdiek/rerunfileche
 ck.sty
@@ -505,391 +463,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip59
 )
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
-Package: tikz-cd 2014/10/30 v0.9e Commutative diagrams with tikz
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/frontendlayer/tik
-z.sty
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.st
-y
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.
-sty
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgfut
-il-common.tex
-\pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen159
-\pgfutil@tempdimb=\dimen160
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgfut
-il-common-lists.tex))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgfut
-il-latex.def
-\pgfutil@abb=\box44
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgfrc
-s.code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcor
-e.sty
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks27
+\verbatim@line=\toks28
+\verbatim@in@stream=\read1
 )
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics-cfg/graphics
-.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/homes/li108/texmf/tex/latex/local/pzccal.sty
+Package: pzccal 2011/02/03 v0.1 Zapf Chancery calligraphic math alphabet
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics-def/pdftex.d
-ef
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsy
-s.sty
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/systemlayer/pgf
-sys.code.tex
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgfke
-ys.code.tex
-\pgfkeys@pathtoks=\toks31
-\pgfkeys@temptoks=\toks32
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgfke
-ysfiltered.code.tex
-\pgfkeys@tmptoks=\toks33
-))
-\pgf@x=\dimen163
-\pgf@y=\dimen164
-\pgf@xa=\dimen165
-\pgf@ya=\dimen166
-\pgf@xb=\dimen167
-\pgf@yb=\dimen168
-\pgf@xc=\dimen169
-\pgf@yc=\dimen170
-\w@pgf@writea=\write3
-\r@pgf@reada=\read1
-\c@pgf@counta=\count269
-\c@pgf@countb=\count270
-\c@pgf@countc=\count271
-\c@pgf@countd=\count272
-\t@pgf@toka=\toks34
-\t@pgf@tokb=\toks35
-\t@pgf@tokc=\toks36
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/systemlayer/pgf
-.cfg
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/systemlayer/pgf
-sys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/systemlayer/pgf
-sys-common-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/systemlayer/pgf
-syssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count273
-\pgfsyssoftpath@bigbuffer@items=\count274
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/systemlayer/pgf
-sysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics-cfg/color.cf
 g
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-ore.code.tex
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+Package color Info: Driver file: pdftex.def on input line 147.
 
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmath.co
-de.tex
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathcal
-c.code.tex
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathuti
-l.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathpar
-ser.code.tex
-\pgfmath@dimen=\dimen171
-\pgfmath@count=\count275
-\pgfmath@box=\box45
-\pgfmath@toks=\toks37
-\pgfmath@stack@operand=\toks38
-\pgfmath@stack@operation=\toks39
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.code.tex
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.basic.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.trigonometric.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.random.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.comparison.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.base.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.round.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.misc.code.tex)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathfun
-ctions.integerarithmetics.code.tex)))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmathflo
-at.code.tex
-\c@pgfmathroundto@lastzeros=\count276
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orepoints.code.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen172
-\pgf@picmaxx=\dimen173
-\pgf@picminy=\dimen174
-\pgf@picmaxy=\dimen175
-\pgf@pathminx=\dimen176
-\pgf@pathmaxx=\dimen177
-\pgf@pathminy=\dimen178
-\pgf@pathmaxy=\dimen179
-\pgf@xx=\dimen180
-\pgf@xy=\dimen181
-\pgf@yx=\dimen182
-\pgf@yy=\dimen183
-\pgf@zx=\dimen184
-\pgf@zy=\dimen185
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen186
-\pgf@path@lasty=\dimen187
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orepathusage.code.tex
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen188
-\pgf@shorten@start@additional=\dimen189
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orescopes.code.tex
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box46
-\pgf@hbox=\box47
-\pgf@layerbox@main=\box48
-\pgf@picture@serial@count=\count277
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-oregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen190
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-oretransformations.code.tex
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen191
-\pgf@pt@y=\dimen192
-\pgf@pt@temp=\dimen193
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orequick.code.tex
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-oreobjects.code.tex
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orearrows.code.tex
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen194
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-oreshade.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen195
-\pgf@sys@shading@range@num=\count278
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-oreimage.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-oreexternal.code.tex
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box49
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orelayers.code.tex
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-oretransparency.code.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/basiclayer/pgfc
-orepatterns.code.tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-)))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/modules/pgfmodu
-leshapes.code.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box50
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/modules/pgfmodu
-leplot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/compatibility/pgf
-comp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen196
-\pgf@nodesepend=\dimen197
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/compatibility/pgf
-comp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/utilities/pgffor.
-sty
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys
-.sty
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgfke
-ys.code.tex))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmath.co
-de.tex))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/utilities/pgffo
-r.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/math/pgfmath.co
-de.tex)
-\pgffor@iter=\dimen198
-\pgffor@skip=\dimen199
-\pgffor@stack=\toks40
-\pgffor@toks=\toks41
-))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/frontendlayer/t
-ikz/tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/libraries/pgfli
-braryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count279
-\pgfplotmarksize=\dimen256
-)
-\tikz@lastx=\dimen257
-\tikz@lasty=\dimen258
-\tikz@lastxsaved=\dimen259
-\tikz@lastysaved=\dimen260
-\tikzleveldistance=\dimen261
-\tikzsiblingdistance=\dimen262
-\tikz@figbox=\box51
-\tikz@figbox@bg=\box52
-\tikz@tempbox=\box53
-\tikz@tempbox@bg=\box54
-\tikztreelevel=\count280
-\tikznumberofchildren=\count281
-\tikznumberofcurrentchild=\count282
-\tikz@fig@count=\count283
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/modules/pgfmodu
-lematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count284
-\pgfmatrixcurrentcolumn=\count285
-\pgf@matrix@numberofcolumns=\count286
-)
-\tikz@expandcount=\count287
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/frontendlayer/t
-ikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/tikz-cd/tikzlibrary
-cd.code.tex
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/frontendlayer/t
-ikz/libraries/tikzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/frontendlayer/t
-ikz/libraries/tikzlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2014/03/21 v3.0.1a (rcs-revision 1.4)
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/generic/pgf/libraries/pgfli
-braryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen263
-\pgfarrowlength=\dimen264
-\pgfarrowwidth=\dimen265
-\pgfarrowlinewidth=\dimen266
-)))
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks42
-\verbatim@line=\toks43
-\verbatim@in@stream=\read2
-)
-(/homes/li108/texmf/tex/latex/local/pzccal.sty
-Package: pzccal 2011/02/03 v0.1 Zapf Chancery calligraphic math alphabet
-)
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/scalerel/scalerel.sty
-Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
-ng of objects, relative to a reference object or in absolute terms
-
-(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count288
-)
-\thesrwidth=\skip60
-\thesrheight=\skip61
-\srblobheight=\skip62
-\srblobdepth=\skip63
-\mnxsrwidth=\skip64
-\LMex=\skip65
-\LMpt=\skip66
-)) (./LineBundleCase.aux)
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics-def/pdftex.d
+ef
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+))) (./LineBundleCase.aux)
 \openout1 = `LineBundleCase.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -911,32 +506,47 @@ LaTeX Font Info:    Try loading font information for OT1+bch on input line 3.
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 )
-\AtBeginShipoutBox=\box55
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/graphics-cfg/graphics
+.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+)
+\AtBeginShipoutBox=\box44
 Package hyperref Info: Link coloring OFF on input line 3.
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
+ (./LineBundleCase.out) (./LineBundleCase.out)
+\@outlinefile=\write3
+\openout3 = `LineBundleCase.out'.
 
-(./LineBundleCase.out) (./LineBundleCase.out)
-\@outlinefile=\write4
-\openout4 = `LineBundleCase.out'.
 
-
-ABD: EveryShipout initializing macros
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/context/base/mkii/supp-pdf.
 mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen267
-\scratchbox=\box56
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen268
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count268
+\scratchdimen=\dimen161
+\scratchbox=\box45
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen162
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks30
 )
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/oberdiek/epstopdf-bas
 e.sty
@@ -957,66 +567,67 @@ sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 11.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 6.
 
 (/export/pkgs/linux-rh7/texlive-2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `OT1/pzcm/mb/it' will be
-(Font)              scaled to size 11.25pt on input line 12.
+(Font)              scaled to size 11.25pt on input line 10.
 LaTeX Font Info:    Font shape `OT1/pzcm/mb/it' will be
-(Font)              scaled to size 7.875pt on input line 12.
+(Font)              scaled to size 7.875pt on input line 10.
 LaTeX Font Info:    Font shape `OT1/pzcm/mb/it' will be
-(Font)              scaled to size 5.625pt on input line 12.
+(Font)              scaled to size 5.625pt on input line 10.
 
 [1
 
 {/export/pkgs/linux-rh7/texlive-2017/texmf-var/fonts/map/pdftex/updmap/pdftex.m
 ap}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
  (./LineBundleCase.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `LineBundleCase.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 26000 strings out of 492990
- 519283 string characters out of 6127056
- 550627 words of memory out of 5000000
- 29171 multiletter control sequences out of 15000+600000
+ 14454 strings out of 492990
+ 265181 string characters out of 6127056
+ 324201 words of memory out of 5000000
+ 17888 multiletter control sequences out of 15000+600000
  538439 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,5n,86p,10404b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,9n,28p,10404b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/bitstrea/charter/bch
 r8a.pfb></export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/bitstrea/ch
 arter/bchri8a.pfb></export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></export/pkgs/linux-rh7/texlive-2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb></export/pkgs/linux-rh7/texlive-2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></export/pkgs/linux-rh7/texliv
-e-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></export/pkgs/linux-r
-h7/texlive-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></export/p
-kgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-</export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb></export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/urw
-/zapfchan/uzcmi8a.pfb>
-Output written on LineBundleCase.pdf (1 page, 86867 bytes).
+ublic/amsfonts/cm/cmex10.pfb></export/pkgs/linux-rh7/texlive-2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></export/pkgs/linux-rh7/texlive-2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></export/pkgs/linux-rh7/texli
+ve-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></export/pkgs/linux
+-rh7/texlive-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></export/p
+kgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy7.pfb></export/pkgs/linux-rh7/texlive-2017/texmf-dist/fonts/type1/urw/zapf
+chan/uzcmi8a.pfb>
+Output written on LineBundleCase.pdf (2 pages, 92503 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
