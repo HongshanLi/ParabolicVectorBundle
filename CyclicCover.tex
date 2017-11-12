@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\begin{document}
+Let $D$ be a smooth divisor of a smooth projective variety $X$. 
+If I want a cyclic cover branched over $D$, then I can just through in
+$n$-th root of local equations of $D$ in the function field $\complex(X)$ then
+normalize $X$ in $\complex(X)(\text{n-th root of local equation of $D$})$.
+\[
+    \pi: \tilde{X} \rightarrow X
+\]
+And hope that $D$ is the only place that $\pi$ branches. But local equation
+of $D$ is just a rational function on $X$. Somewhere on $X$ it will pick up
+a pole, and naturally $\pi$ branches over the pole just as branches over the zeros
+of the rational function. That is why during the construction of cyclic cover, one
+picks up some other branch divisors.
+
+This is why in Kawamata's construction of cyclic cover, we cannot just throw in
+$f_1^{1/n_1}$, where $f_1$ is the local equation of $D_1$, because $f_1$ might 
+have a pole on $D_2$. We cannot just throw in $f_1^{1/n_1}$, because we will 
+pick up the branching over the pole of $f_1^{1/n_1}$, if we are unlucky, the 
+poles might not be normal crossing. That is why we need to control what pole
+should be in the first place, by choosing all these $H_i$'s.
+ 
+
+Let $D = D_1 + D_2 +\cdots + D_n$ be a normal crossing divisor. If we want a 
+cyclic cover 
+\[
+    \pi: \tilde{X} \rightarrow X
+\]
+that branches over $D_i$ of degree $n_i$. Then, the naive idea would be 
+to throw in $f_i^{1/n_i}$, where $f_i$ is the local equation of $D_i$. 
+Obviously, this is a stupid idea, because $\pi$ will be generically etale
+and it cannot be generically etale of degree $n_1$ and $n_2$ at the same
+time. 
+
+Consider the following map $\phi$
+\begin{align*}
+    \Delta\times\Delta & \rightarrow & \Delta\times\Delta \\
+      y_1, y_2         & \mapsto     & y_1^n, y_2
+\end{align*}
+Let $D_1$ and $D_2$ be divisors downstairs defined by $y_1=0$ and $y_2=0$.
+Then, $\pullback{\phi}D_1 = n_1D_1$, and $\pullback{\phi}D_2 = D_2$. To make
+a cyclic cover branched over $D_2$, we fix the first coordinate, and raise the 
+power of the second coordinate. Call the following map $\phi$
+\begin{align*}
+    \Delta\times\Delta & \rightarrow & \Delta\times\Delta \\
+      y_1, y_2         & \mapsto     & y_1^{n_1}, y_2^{n_2}
+\end{align*}
+Then
+\[
+    \pullback{\phi}D_1 = n_1D_1, \pullback{\phi}D_2 = n_2D_2
+\]
+
+\end{document}
+ 
+
+

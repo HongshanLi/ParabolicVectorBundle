@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\begin{document}
+Variation of Hodge structure consists of the following data
+\begin{enumerate}
+\item A connected complex manifold $M$
+\item A flat complex vector bundle $H_{\complex} \rightarrow M$ with 
+    a flat real structure $H_{\real}$, and a flat bundle of lattice
+    $H_{\integer} \subset H_{\real}$, {i.e.} transition functions
+    of $H_{\complex}$ a locally constant and real-valued. The flat connection
+    of $H_{\complex}$ has real valued connection matrix
+
+\item An integer $k$
+\item A flat, nondegenerate bilinear form $S$ on $H_{\complex}$ which is rational
+    with respect to $H_{\integer}$, \emph{i.e} restricting to each fibre, $S$
+    is a locally constant matrix of rational coefficient with repect to the chosen
+    basis $H_{\integer}$
+\item A decreasing filtration
+\[
+    H_{\complex} \supset F^1\supset \cdots \supset 0
+\]
+by holomorphic subbundle.
+\end{enumerate}
+The objects need to satisfy the following
+\begin{enumerate}
+\item Over each point $t$, $H_{\complex}, F, S$ restrict to a polarized Hodge 
+    structure of weight $k$.
+\item $\nabla(F^p) \subset F^{p-1}$
+\end{enumerate}
+
+\newcommand{\HodgeNumber}{h^{p,q}}
+\section{Classifying space for Hodge Structure}
+Let $H_{\integer}$ be some lattice over $\integer$, and let $H_{\complex}$ 
+be its complexification. Fix an integer $k$, and a collection of nonzero
+integers $h^{p,q}$ such that $p + q = k$. First objective is to give a manifold
+structure to the parameter space of all Hodge structure of weight $k$ on $H_{\complex}$.
+Let $D_p = dim F^p = \sum\limits_{i\ge p} \HodgeNumber$. Then, we consider the product 
+of Grassmannian
+\[
+    Grass = G(H_{\complex},D_0) \times G(H_{\complex}, D_1)\times\cdot \times 
+\]
+A possible filtration on $H_{\complex}$ can be considered as a point in $Grass$.
+All possible filtrations on $H_{\complex}$ can be identified with the incidence
+variety $I$ on $G$(why incidence variety is smooth)
+
+The general linear subgroup of $H_{\complex}$ operates on $I$ transitively. 
+The subset $F \subset I$ satisfying
+\[
+    H_{\complex} = F^p\oplus \bar{F}^{k-p+1}
+\]
+is an Zariski open subset of $I$. So $F$ parametrizes the Hodge structure on $H_{\complex}$.
+
+Let $S$ be a nondegenerate bilinear form on $H_{\complex}$, symmetric or skew, depending
+on the parity of $k$, such that 
+\begin{align*}
+    S(H^{p,q}, H^{r,s}) & = & 0, & \text{unless} p = s, q = r \\
+    i^{p-q}S(v, \bar{v})& > & 0, & \text{if} v \in H^{p,q}, v\neq 0
+\end{align*}
+
+Let $\cech{D}$ be the points of $I$ satisfy condition 1.
+\[
+    G_{\complex} = \{g \in GL(H_{\complex}) | s(gu, gv) = S(u, v)\}
+\]
+operates on $\cech{D}$ transitively. 
+
+
+Let $D \subset I$ be the subset of filtration satisfy the above two conditions.
+$D$ is a open subvariety. 
+\[
+    G_{\real} = \{g\in GL(H_{\real}) | S(gu, gv) = S(u, v)\}
+\]
+acts transitively on $D$. Therefore, $D$ is smooth. $D$ parametrize Hodge 
+structure of weight $k$ on $H_{\complex}$ with the polarization $S$
+
+Choose a reference point $o \in D$, Let $H$ be the corresponding filtration.
+Let $B \subset G_{\complex}$ that fixes $H$, \emph{i.e.} $gF^{p}(H) = F^{p}(H)$
+for all $g\in B$ and all $p$. Then, we have a set-theoretical identification
+\[
+    G_{\complex}/B \cong \cech{D}
+\]
+
+One obtains analogous identification
+\[
+    G_{\real}/V \cong D, V = G_{\real}\cap B
+\]
+
+\subsection{Group invariant subtangent bundle of $\cech{D}$ and $D$}
+
+
+\end{document}
