@@ -57,11 +57,11 @@ on the parity of $k$, such that
     i^{p-q}S(v, \bar{v})& > & 0, & \text{if} v \in H^{p,q}, v\neq 0
 \end{align*}
 
-Let $\cech{D}$ be the points of $I$ satisfy condition 1.
+Let $\check{D}$ be the points of $I$ satisfy condition 1.
 \[
     G_{\complex} = \{g \in GL(H_{\complex}) | s(gu, gv) = S(u, v)\}
 \]
-operates on $\cech{D}$ transitively. 
+operates on $\check{D}$ transitively. 
 
 
 Let $D \subset I$ be the subset of filtration satisfy the above two conditions.
@@ -76,7 +76,7 @@ Choose a reference point $o \in D$, Let $H$ be the corresponding filtration.
 Let $B \subset G_{\complex}$ that fixes $H$, \emph{i.e.} $gF^{p}(H) = F^{p}(H)$
 for all $g\in B$ and all $p$. Then, we have a set-theoretical identification
 \[
-    G_{\complex}/B \cong \cech{D}
+    G_{\complex}/B \cong \check{D}
 \]
 
 One obtains analogous identification
@@ -84,7 +84,171 @@ One obtains analogous identification
     G_{\real}/V \cong D, V = G_{\real}\cap B
 \]
 
-\subsection{Group invariant subtangent bundle of $\cech{D}$ and $D$}
+\subsection{Group invariant subtangent bundle of $\check{D}$ and $D$}
+The Lie algebras of $G_{\complex}$ can be described as
+\[
+    g = \{X \in GL(H_{\complex})|S(Xu, v) + S(u, Xv) = 0 \}
+\]
+
+How does an orthogonal matrix $M$ to an real-valued symmetric 
+matrix look like, regarded as a bilinear form.
+
+$g$ contains 
+\[
+    g_0 = \{X \in g | XH_{\real} \subset H_{R}\}
+\]
+$g = g_0\oplus ig_0$. Via the containment $G_{\real} \subset G_{\complex}$, $g_0$ 
+becomes the Lie algebra of $G_{\real}$ . 
+\[
+    g = \bigoplus_p g^{p,-p}
+\]
+such that if $X \in g^{p,-p}$, $XH^{r,s} \subset H^{r+p, s-p}$. 
+
+The Lie algebra $b$ of $B$ consists of all those $X \in g$ that preserves the reference Hodge
+filtration. i.e
+\[
+    b = \bigoplus_{p\ge 0} g^{p,-p}
+\]
+Let $v$ be the Lie algebra of $V = G_{\real}\cap B$, then
+\[
+    v = g_0 \cap b = g_0\cap b \cap \bar{b} = b\cap g^{0,0}
+\]
+
+The holomorphic tangent space of $\check{D} \cong G_{\complex}/B$ at 
+the base point is naturally isomorphic to $g/b$. Under this iso, the
+action of the isotropy group $B$ on the tangent space correspond to
+the adjoint action of $B$ on $g/b$. Consequently, the holomorphic tangent
+bundle $T \rightarrow \check{D}$ coincides with the vector bundle associated
+to the holomorphic principal bundle
+\[
+    B \rightarrow G_{\complex} \rightarrow G_{\complex}/B \cong \check{D}
+\]
+\[
+    b \oplus g^{-1,1}/b 
+\]
+Defines a $B-$invariant subspace of $g/b$. Therefore, it gives rise to a $B$
+invariant subbundle $T_h(\check{D})$. Call it horizontal tangent bundle.
+
+A holomorphic map $\Psi: M \rightarrow \check{D}$ is said to be horizontal if 
+at each point $M$, the induced map on tangent space takes value in $T_h(\check{D})$.
+
+Construct $T_h(D)$ by restriction. $G_{\complex}$-invariance of $T_h(\check{D})$ 
+implies $G_{\real}$-invariance of $T_h(D)$. 
+
+\subsection{Alternate description of the horizontal tagent bundle}
+\begin{lemma}
+At each point $c \in \check{D}$, correpsonding to the filtration $F(c)$, a vector
+field $X \in g$ takes value in the horizontal tangent space if and only if
+$X$ regarded as an endomorphism of $H_{\complex}$, maps $F^p$ to $F^{p-1}$
+\end{lemma}
+\begin{proof}
+At the base point, the value of $X$ lie in
+\[
+    b\oplus g^{-1,1}/b
+\]
+Therefore, the value of $X$ can be represented by somebody in $g^{-1,1}$
+\end{proof}
+
+By construction, $\check{D}$ carries a tautological complex vector bundle $H_{\complex}(\check{D})$,
+with fibre $H_{\complex}$. The global filtration $\mathbb{F}$ of the bundle, restrict to the 
+fitration of $H_{\complex}$ corresponding to the base point. Let
+\[
+    \nabla: \mathbb{H_{\complex}} \rightarrow \mathbb{H_{\complex}}\otimes \Omega_{\check{D}}
+\]
+be the flat connection. 
+\newcommand{\hd}{H_{\complex{\check{D}}}}
+Let $p:\hd \rightarrow \hd/F^p$, the composition
+\[
+    p\circ\nabla F^p \rightarrow \hd/F^p \otimes \Omega_{\check{D}}
+\]
+is $O_{\check{D}}$-linear. 
+
+Consider the holomorphic map $\Psi: M \rightarrow \check{D}$ of a complex manifold $M$ into 
+$\check{D}$. The vector bundle $H_{\complex}(\check{D})$ pulls back to the trivial bundle
+$\mathbb{H_{\complex}} \rightarrow M$
+
+A holomorphic map $\Psi: M \rightarrow D$ is horizontal if and only if 
+\[
+    \nabla(F^p) \subset F^{p-1}\otimes\Omega_{D}
+\]
+
+\newcommand{\VHS}{\mathbb{H}_{\complex}}
+Now, consider a variation of Hodge structure $\{M, \VHS, F\}$. Let $\pi: \tilde{M} \rightarrow M$
+denote the universal covering of $M$. The vector bundle $\VHS$ pullback to a trivial bundle
+$\tilde{M}\times H_{\complex}$. The filtration also pulls back. Therefore, for each point 
+$m \in \tilde{M}$, we get a Hodge structure on $H_{\complex}$ of weight rank $\VHS$. So we get
+a map
+\[
+    \tilde{\Phi}: \tilde{M} \rightarrow D
+\]
+Variation of Hodge structure has the attribute of transversality. Therefore, the map $\tilde{\Phi}$
+is automatically horizontal.
+
+$\VHS.H_{\integer}$ and $\VHS.S$ are flat, therefore the action of $\pi_1(M)$ preserves both. 
+
+One can think of $\VHS$ on $M$ as a quotient from the universal cover in the first place.
+
+The subgroup
+\[
+    \Gamma = \phi(\pi_1(M)) \subset G_{\integer}
+\]
+is called the monodromy group of the variation of Hodge structure. 
+
+By construction of $\tilde{\Phi}$, if two points of $\tilde{M}$ are 
+related by some $\sigma \in \pi_1(M)$, the corresponding Hodge structures are related by
+$\psi(\sigma)$.
+\[
+    \tilde{\sigma a} = \psi(\sigma)\circ\tilde{\Psi}(a), a \in \tilde{M}, \sigma \in \pi_1(M)
+\]
+Therefore, $\tilde{\Phi}$ descends to a mapping
+\[
+    \Phi: M \rightarrow D/\Gamma
+\]
+This map is called Griffith's period mapping for variaiton of Hodge structure. 
+
+\begin{theorem}(Griffith)
+The period mapping is holomorphic, locally liftable to $D$, and local liftings are horizontal
+\end{theorem}
+
+\section{Nilpotent Orbit Theorem}
+Let $\phi: \Delta^* \rightarrow D/\Gamma$ be the period mapping of VHS on $\Delta^*$
+Let $\pi: U \rightarrow \Delta^*$ be the universal covering map. $\phi\circ\pi$ is locally
+liftable, and since $U$ is simply connected, it is globally liftable. We have the following diagram
+\[
+\begin{tikzcd}
+    & U \arrow{r}{\tilde{\Phi}}\arrow{d}{\pi} 
+        & D \arrow{d} \\
+    & \Delta^* \arrow{r}{\Phi} 
+        & D/\Gamma \\
+\end{tikzcd}
+\]
+One can choose an element $\gamma \in \Gamma\subset G_{\integer}$, such that
+\[
+    \tilde{\Phi}(z+1) = \gamma\circ\tilde{\Phi}(z)
+\]
+\begin{lemma}(Borel)
+All eigenvalues of $\gamma$ are roots of unity
+\end{lemma}
+\begin{proof}
+Computed with respect to Poincar\'e metric 
+\[
+    \frac{dx^2 + dy^2}{y^2}
+\]
+on $U$. the points $in$ and $in + 1$ have the distance $1/n$.
+According to 3.17, if a $G_{\real}$-invariant Riemannian distance function $d$
+on $D$ is suitably renormalized, $\tilde{\Phi}$ will not increase distances.
+When the identification $D \cong G_{\real}/\Gamma$ is made as in 3.6, each
+pf the image points $\tilde{\Phi}(in)$ has a coset rep $g_nV$. So
+$\tilde{\Phi}(in + 1) = \gamma\tilde{\Phi}(in)$ corresponds to the coset $\gamma g_nV$.
+Thus
+\begin{align*}
+    d(\inverse{g_n}\gamma\g_n V, eV) & = & d(\gamma g_nV, g_nV) \\
+                                     & = & d(\tilde{\Phi}(in+1), \tilde{\Phi}(in))
+                                     & \le & \frac{1}{n}
+\end{align*}
+This means the congugacy class of $\gamma$ converge to a point in the compact subgroup
+$V \subset G_{\real}$
+
 
 
 \end{document}
