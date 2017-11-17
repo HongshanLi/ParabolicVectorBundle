@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\usepackage{tikz-cd}
+\begin{document}
+\section{Normal crossing divisor with only one component}
+\newcommand{\V}{\mathcal{V}}
+Let $D$ be a smooth divisor of $X$, and let $\V$ be a quasi-unipotent local system of rank $r$.
+on $X - D$. Let $(V, \nabla)$ be the Degline canonical extension of $\V$. 
+The quasi-unipotent structure of $V$ along $D$ is determined by $\text{Res}\circ\nabla$.
+
+Let $x \in D$ and choose a small neighborhood $U$ of $x$ biholomorphic to a polydisk on
+which $V$ is trivial. Fix a frame $<s_1,...,s_r>$ with repect to which $\text{Res}\circ\nabla$
+is in the Jordan canonical form
+\[
+   M =  J_1(\alpha_1/n)\oplus J_2(\alpha_2/n)\oplus\cdots\oplus J_l(\alpha_l/n)
+\]
+Where each $J_i(\alpha_i/n)$ means the Jordan block with eigenvalue $\alpha_i/n$.
+
+Let $p: Y \rightarrow X$ be a cyclic cover branched over $D$ of degree $kn$
+
+Let $(V_Y, \nabla_Y)$ be the Deligne canonical extension of $\pullback{p}\V$, 
+and let $(\tilde{V}, \tilde{\nabla})$ be the pullback of $V$
+
+% How do the connection matrix of $\nabla_Y$ and $\tilde{\nabla}$ look like?
+
+\newcommand{\tD}{\tilde{D}}
+Let $\tD = (\pullback{p}D)_{red}$. Let $y \in \tD$, and choose a coordinate $y_1,\cdots, y_d$
+so that $\tD$ is defined by $y_1 = 0$. $p$ is locally defined by $x_1 = y_1^{kn}$
+ 
+Choose a basis of $\tilde{V}$ so that the residue of the connection matrix of $\tilde{\nabla}$ looks like
+\[
+    kn \cdot M
+\]
+Write
+\[
+    kn\cdot M = D + N
+\]
+Where $D$ is the invertible part, and $N$ is the nilpotent part. 
+Then, with respect to the same basis, the connection matrix of $\nabla_Y$ looks like
+\[
+    N
+\]
+The flat section $f$ of $\tilde{\nabla}$ satisfy the differential equation
+\[
+    df + \frac{D+N}{y}f = 0
+\]
+The solution to it is
+\[
+    f = e^{-(D+N)\log y}C
+\]
+where $C$ can be taken to the $<1,1,\cdots,1>$. 
+
+The flat section $g$ of $\nabla_Y$ satisfy the differential equation
+\[
+    dg + \frac{N}{y}g = 0
+\]
+The solution is 
+\[
+    g = e^{-N\log y}C
+\]
+The flat section of $V_Y$ and $\tilde{V}$ differ by $y^{-D}$. So we know how to define an $G$-action
+on $V$.
+
+\section{Normal crossing divisor with multiple components}
+There is no consist group action, but there is step-wise group action. 
+Let $D = D_1 + D_2 + \cdot + D_N$ be a normal crossing divisor of $X$. 
+Let $\gamma_i$ be the monodromy of $\V$ around $D_i$. Let $N_i$ be an
+integer so that $\gamma_i^{N_i}$ is unipotent. Take Kawamata's
+construction of cyclic cover
+\[
+     X_N \xrightarrow{p_N} X_{N-1} \xrightarrow{p_{N-1}} X_{N-2}\cdots X_1 \xrightarrow{p_1} X
+\]
+so that $p_i$ is branched over $D_i$ with degree $N_ik_i$. 
+Let $V_i$ the Deligne canonical extension of $\inverse{p_i}\V$, and let $G_i$ 
+be the Galois group of $p_i$. We can define a $G_i$-action on $V_i$, so that
+\[
+    (\pushforward{p_i}V_i)^{G_i} \cong V_{i-1}
+\]
+However, let $G$ be the Galois group of $p_N\circ p_{N-1}\circ\cdots\circ p_1$, 
+I don't think we can define an $G$-action on $V_N$ that identifies its invariant
+section with $V$ in one step. Here is the reason why. Let $N = 2$. For simplicity,
+let $\dim X = 2$. We will see that even locally, one cannot define an one-step 
+$G$-action. The local picture of cyclic covering looks like
+\begin{align*}
+    & \Delta_1\times\Delta_2 & \xrightarrow{p_2} & \Delta_1\times\Delta_2 & \xrightarrow{p_1} &\Delta_1\times\Delta_2 \\
+    & (y_1, y_2) & \mapsto                       & (y_1, y_2^{m_2})       & \mapsto           & (y_1^{m_1}, y_2^{m_2}) 
+\end{align*}
+Choose a frame for $V$, so that the connection matrix of $\nabla$ looks like
+\[
+    \Gamma_1\frac{dy_1^{m_1}}{y_1^{m_1}} + \Gamma_2\frac{dy_2^{m_2}}{y_2^{m_2}}
+\]
+where $\Gamma_i$ are in their Jordan canonical form. 
+The eigenvalues of $\Gamma_i$ are rational and lie in $[0, 1)$. Let $p = p_1\circ p_2$.
+Consider pullback of the connection
+\[
+    \pullback{p}\nabla = (D_1 + N_1)\frac{dy_1}{y_1} + (D_2 + N_2)\frac{dy_2}{y_2}
+\]
+where $D_i$ denotes the diagonal part, and $N_i$ denote the nilpotent part.
+
+The connection matrix of $\nabla_2$ will be 
+\[
+    N_1\frac{dy_1}{y_1} + N_2\frac{dy_2}{y_2}
+\]
+Therefore the flat sections of $\nabla_2$ and $\pullback{p}\nabla$ differ by
+\[
+    y_1^{-D_1}y_2^{-D_2}
+\]
+So we can see that we cannot play the ususal game to define a $G$-action on $V_2$.
+
+WELL, actually we can still define a one step action, but we need to pay a price
+of making the frame of the Deligne canonical extension a bit more complicated,
+to keep track of each divisor. In the above example, write the usual frame of $V_2$
+this way
+\[
+    e_1^1\otimes e_1^2, e_2^1\otimes e_2^2, e_3^1\otimes e_3^2, \cdots, e_r^1\otimes e_r^2
+\]
+where underscript means the rank of $V$ and superscript keeps track of divisors.
+
+Let $G = G_1\times G_2$. Let $\mu = (\mu_1, \mu_2)$ be an element of $G$. 
+Then, $\mu_1$ acts on $e_1^i$ according to $y_1^{-D}$ and $\mu_2$ acts on $e_2^i$
+according to $y_2^{-D_2}$. 
+
+\end{document}
+
+
+
+
+
+
+ 
+
+
+
