@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{mathpkgs}
+\begin{document}
+\begin{definition}
+A normal variety $X$ of dimension $n$ has only terminal singularities if
+\begin{enumerate}
+\item The canonical divisor is $\rational$-Cartier
+\item There exists a projective birational morphism $f: V \rightarrow X$ from
+    a nonsingular variety $V$ such that in the ramification formula
+\[
+    K_V = \pullback{f}K_X + \sum a_iE_i
+\]
+all coefficients for the exceptional divisors are strictly positive.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+A log pair $(X, D)$ is a pair consisting of a normal variety $X$ and a boundary
+$\rational$-divisor $D = \sum d_iD_i$ such that $0 \le d_i \le 1$. We call
+$K_X + D$ the log canonical divisor of the pair $(X, D)$.
+\end{definition}
+
+
+\begin{definition}
+A logarithmic pair $(X, D)$ has only log terminal(respectively log canonical) 
+singularities, if 
+\begin{enumerate}
+\item the log canonical divisor $K_X + D$ is $\rational$-Cartier
+\item there exists a projective birational morphism
+\[
+    f: V \rightarrow X
+\]
+from a nonsingular variety $V$ such that
+\[
+    D_V = \sum E_i + \inverse{f_*}D
+\]
+is a divisor of normal crossings, where $E_i$ are the exceptional divisors
+for $f$ and $\inverse{f_*}$ is the strict transform of $D$, and such that
+in the logarithmic ramificaition formula
+\[
+    K_V + D_V = \pullback{f}(K_X + D) + \sum b_iE_i
+\]
+all $b_i >0$(respectively $b_i \ge 0$)
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+The log pair $(X, D)$ has Kawamata log terminal singularity if for the boundary 
+divisor $D = \sum d_kD_k$, we have 
+\[
+    0 \le d_k < 1
+\]
+\end{definition}
+
+
