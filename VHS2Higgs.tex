@@ -49,8 +49,63 @@ $E$ is parabolic semistable.
 $\theta$ is nilpotent, \emph{i.e.} $\nabla_*$ has Griffith transversality with respect to $F$.
 \end{lemma}
 \begin{proof}
+Let $\alpha$ be a section of $V_*$, and let $\beta$ be the section of $(\pushforward{\pi}\bar{V})^G$,
+such that $\phi(\beta) = \alpha$. We will show that $\bar{\nabla}(\beta)$ is $G$-invariant,
+and $\phi(\bar{\nabla}(\beta)) = \nabla_*(\alpha)$.
+
+\renewcommand{\vector}[2]{
+    \left[\begin{array}{c}
+            {#1}\\
+            {\vdots}\\
+            {#2}
+        \end{array}\right]
+}
+It is enough to check locally. Use the notations from the proof of lemma 2.4. Locally on $U$, let
+$\alpha$ be given by 
+\[
+    \vector{\alpha_1}{\alpha_r}
+\]
+with respect to the frame $<s_1, \cdots, s_r>$. Then, $\beta$ is given by
+\[
+    \vector{\alpha_1\prod\limits_{j=1}^sy_j^{d^j_1}}{\alpha_r\prod\limits_{j=1}^sy_j^{d^j_r}}
+\]
+with respect to the frame $<e_1,\cdots,e_r>$.
+To make the notation simpler, we write $\prod\limits_{j=1}^sy_j^{d^j_i}$ as $y^{\delta_i}$ 
+Then,
+\[
+    \bar{\nabla}(\beta) = \vector{y^{\delta_1}d\alpha_1 + \alpha_1 y^{\delta_1}\sum\limits_{j=1}^sd^j_1\frac{dy_j}{y_j}}
+                          {y^{\delta_r}d\alpha_1 + \alpha_1 y^{\delta_r}\sum\limits_{j=1}^sd^j_r\frac{dy_j}{y_j}}
+    + N_1\beta\frac{dy_1}{y_1} + \cdots N_s\beta\frac{dy_s}{y_s}
+\]
+Reorganize the terms, we have
+\[
+    \bar{\nabla}(\beta) = \vector{y^{\delta_1}d\alpha_1}{y^{\delta_r}d\alpha_r}
+        + (N_1 + D_1)\beta\frac{dy_1}{y_1} + \cdots (N_s + D_s)\beta\frac{dy_s}{y_s}
+\]
+We observe that in $\bar{\nabla}(\beta)$ every coefficient in $\bar{V}$ is $G$-invariant. 
+Therefore, $\bar{\nabla}(\beta)$ is a $G$-invariant section. 
+
+Recall in the proof of lemma2.4, 
+\[
+    N_i + D_i = B_i = k_iNA_i
+\]
+So $\bar{\nabla}(\beta)$ can be written more compactly as
+\[
+    \bar{\nabla}(\beta) = \vector{y^{\delta_1}d\alpha_1}{y^{\delta_r}d\alpha_r} 
+        + k_1NA_1\frac{dy_1}{y_1} + \cdots k_sNA_s\frac{dy_s}{y_s}
+\]
+As $y^{k_iN}_i = x_i$, we have
+\[
+    \frac{dy_i}{y_i} = \frac{dx_i}{k_iNx_i}
+\]
+Hence, 
+\begin{align*}
+    \phi(\bar{\nabla}(\beta)) & = d(\alpha) + A_1\alpha\frac{dx_1}{x_1} + \cdots  + A_s\alpha\frac{dx_s}{x_s} \\
+                              & = \nabla_*(\alpha)
+\end{align*}
+
+As $\bar{\nabla}(\beta) \in \bar{F}^{p-1}\bar{V}$, we have proved that $\nabla_*{\alpha} \in F^{p-1}V_*$. 
 
 
-
-
+\end{proof}
 \end{document}
