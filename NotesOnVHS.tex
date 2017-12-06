@@ -254,6 +254,33 @@ it follows that the eigenvalues of $\gamma$ must be root of unity.
 \end{proof}
 
 
+Write $\gamma = \gamma_u\gamma_s$, where $\gamma_u$ is unipotent, and $\gamma_s$
+is semi-simple. Let $m$ be the least integer such that $\gamma_s^m = 1$. Define
+\begin{align*}
+    N & = \log\gamma_u = \sum\limits_{k\ge 1}(-1)^{k+1}\frac{1}{k}(\gamma_u-1)^k \\
+      & = \frac{1}{m}\log\gamma = \sum\limits_{k\ge 1}(-1)^{k+1}\frac{1}{k}(\gamma - 1)^k 
+\end{align*}
+
+Given $\tilde{\phi}: U \rightarrow D$, I want to define a map invariant under
+$z \mapsto z + 1$, so that it drop to a map $\Delta^* \rightarrow D$. 
+\[
+    \tilde{z} = \exp{-mzN}\circ\tilde{\phi}(mz)
+\]
+has this property. Denote the descent of this map by $\Phi$.
+
+\begin{theorem}(One-Variable case of Nilpotent Oribit Theorem)
+The mapping $\Phi$ can be continued holomorphically over the puncture of $\Delta^*$.
+The point $a = \Phi(0) \in \check{D}$ is a fixed point of $\gamma_s$. For a suitable
+constant $\alpha \ge 0$, $Im z \gr \alpha$ implies $\exp(zN)\circ a \in D$.
+Perhaps after increasing the constant $\alpha$, and for a suitable choice of $\beta \ge 0$
+$Im z >\alpha$ also implies the inequality
+\[
+    d(\exp(zN)\circ a, \tilde{\phi}(z)) \le (Im z)^{\beta}\exp(-2\pi\inverse{m}Im z)
+\]
+here $d$ denote a $G_{\real}$-invariant Riemannian distance function used to prove 
+the lemma of Borel. The mapping $z \mapsto \exp(zN)\circ a$ is horizontal.
+\end{theorem}
+
 
 
 \end{document}
