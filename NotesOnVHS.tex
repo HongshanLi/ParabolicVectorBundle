@@ -253,6 +253,255 @@ value 1. As $\gamma$ is integer-valued matrix with respect to the basis $H_{\int
 it follows that the eigenvalues of $\gamma$ must be root of unity. 
 \end{proof}
 
+\newcommand{\Im}{\text{Im}}
+\begin{theorem}(Nilpotent Orbit Theorem)
+The mapping $\Psi$ can be continued holomorphiccaly over the puncture of $\Delta^*$.
+The point $a = \Psi(0) \in \check{D}$ is a fixed point of $\gamma_s$. 
+For a suitable constant $\alpha \ge 0$, $\Im z > \alpha$ implies that $\exp(zN)\circ\alpha
+\in D$/ Perhaps after increasing the constant $\alpha$, and for a suitable choice of 
+$\beta \ge 0$, $\Im z > \alpha$ also implies the inequality
+\[
+    d(\exp(zN))\circ a, \tilde{\phi}(z)) \le (\Im z)^{\beta}\exp(-2\pi\inverse{m}\Im z)
+\]
+here $d$ is the $G_{\real}$ invariant distance function on $D$. The mapping
+$z \mapsto \exp(zN)\circ a$ of $\complex$ into $\check{D}$ is horizontal.
+\end{theorem}
+\begin{proof}
+Let $H_{\complex} = \bigoplus H_0^{p,q}$ be the Hodge structure corresponding to the 
+base point $o \in D$. We get an induced Hodge structure
+\[
+    g = \bigoplus g^{p,-1}
+\]
+Let $\theta: g \rightarrow g$ be the Weil operator
+\[
+    \theta X = (-1)^pX
+\]
+The 1 and -1 eigenspaces of $\theta$ will be denoted by, $t$ and $p$. Set
+\[
+    t_0 = t\cap g_0, p_0 = p\cap g_0
+\]
+The properties of $\theta$ imply that
+\[
+    g = t\oplus p, g_0 = t_0\oplus p_0
+\]
+\[
+    [t,t]\subset t, [t,p]\subset p, [p,p]\subset t
+\]
+The fixed point of $\bar{\theta}$ is 
+\[
+    m_0 = t_0\oplus ip_0
+\]
+
+$m_0$ is a real form of $g$, \emph{i.e.}
+\[
+    g = m_0\oplus im_0
+\]
+Let $C$ be the Weil operator on $H_{\complex}$ corresponding to the reference Hodge
+structure. Then,
+\[
+    (u, v) = S(Cu,\bar{v})
+\]
+defines a Hermitian inner product . I think
+\[
+    (u, v) = S(Cu, v)
+\]
+defines a Hermitian inner product. 
+
+$C$ is an element of the group $G_{\real}$, whose adjoint action on $g$ coincide with
+$\theta$.
+\begin{definition}(Adjoint representation)
+Let $G$ be a Lie group. $x \in G$, and let $g_x$ be its Lie algebra. For $g\in G$
+\[
+    x \maps gx\inverse{g}
+\]
+is the adjoint representation of $G$.
+\end{definition}
+$m_0$ is the intersection of $g$ with skew Hermitian transformation. 
+$M \subset G_{\complex}$, which corresponds to the subalgebra $m_0 \subset g$ coincides 
+with the connected component of the identity in the intersection of $G_{\complex}$ with
+the unitary group. So $M$ is compact. Also, a compact real form in a connected, 
+complex simisimple Lie group is always connected and is its own normalizer. Therefore, 
+$M$ equals the full intersection of $G_{\complex}$ with the unitary group.
+
+The intersection
+\[
+    K = M \cap G_{\real}
+\]
+is a compact subgroup of $G_{\real}$, whose Lie algebra $t_0 = m_0\cap g_0$ consists 
+of skew Hermitian transformations, whereas the complement $p_0$ of $t_0$ in $g_0$ 
+consists of Hermitian transformations. So The connected component of the identity 
+in $K$ forms a maximal compact subgroup of the connect component  of the identity in
+$G_{\real}$. 
+
+$K$ is a maximal compact subgroup of $G_{\real}$ and it meets every connected 
+component of $G_{\real}$.
+
+\begin{lemma}
+$V = M \cap B$, and $V \subset K$
+\end{lemma}
+\begin{proof}
+$x \in V = G_{\real}\cap B$ leaves the subspace $H_0^{p,q}$ invariant. $x \in M \cap B$
+also leave the subspaces invariant. And $x$ preserve inner product. With respec to the 
+inner product, the reference Hodge decomp is orthogonal, so elements of $M\cap B$ leaves
+the subspace $H_0^{p,q}$. Also, every $g\in M$ is self-adjoint
+\[
+    Cg\inverse{C}\bar{v} = \bar{gv}
+\]
+If $g\in M$ also happens to preserve the subspaces $H_0^{p,q}$, it commutes with $C$.
+It must then respect the real lattice of $H_{\complex}$, hence belongs to $G_{\real}$.
+\[
+    M\cap B \subset G_{\real}
+\]
+\end{proof}
+
+The $M$-orbit of the identity coset in $G_{\complex}/B \cong \check{D}$, becomes 
+naturally isomorphic to $M/V$. Since $G_{\real}$ and $M$ have the same dimension
+(both are real forms of $G_{\complex}$). The dimension of $M/V$ and $D = G_{\real}/V$
+also agree, so $M/V$ must be an open orbit. Since $M$ is closed, $M/V$ must also be a 
+closed orbit. Hence, $M$ operates transitively on $\check{D}$, and this gives the 
+identification
+\[
+    D \cong M/V
+\]
+
+Regard the elements of $g$ as linear transformations on the vector space $H_{\complex}$.
+The bilinear form
+\[
+    B(X, Y) = \text{trace}XY, X,Y\in g
+\]
+is clearly symmetric, invariant under the adjoint action of $G_{\complex}$ on $g$,
+and defined over $\real$, relative to the real structure $g_0 \subset g$
+
+\begin{lemma}
+The bilinear form $-B$ polarizes the Hodge structure $g = \bigoplus g^{p.-p}$
+\end{lemma}
+\begin{proof}
+Let $X \in g^{p,-p}$ and $Y \in g^{q,-q}$. The linear map $XY$ shift the component
+$H_0^{p,q}$ nontrially, so $XY$ does not have nontiral eigenvalue, i.e. it has no trace.
+With respect to the inner product, the element of $m_0$ are skew Hermitian. This makes
+the eigenvalues of any $X \in m_0$ all purely imaginary, and if $X \neq 0$, not all
+eigenvalues can vanish. Thus, $B$ is negative definite on $m_0$. One has
+\[
+    -B(\theta X, \bar{X}) > 0
+\]
+\end{proof}
+
+So 
+\[
+    (X, Y) = -B(\theta X, \bar{Y}), X, Y \in g
+\]
+turns $g$ into a complex Hilbert space and $g_0$ into a real Hilbert space. 
+
+The adjoint actions of $V$, $K$, and $M$ leave the inner product on $g$ invariant.
+
+\begin{lemma}
+If $T \in g_0$ is nilpotent, and if $T$ is expressed as $Y + Z$, with $Y \in t_0$ and
+$Z \in p_0$, then 
+\[
+    ||T|| = \sqrt{2}||Y|| = \sqrt{2}||Z||
+\]
+\end{lemma}
+
+The holomorphic tangent space to $\check{D} \cong G_{\complex}/B$ at the identity coset
+is naturally isomorphic to the quotient of $g/b$; the quotient, in turn, is isomorphic
+as a $V$-module to the orthogonal complement of $b$ in $g$, namely
+\[
+    c = \bigoplus\limits_{p>0}g^{p,-q}
+\]
+From $g$, $c$ inherits a $V$-invariant inner product. When this inner product is 
+translated via $G_{\real}$ and $M$, one obtains, a $G_{\real}$-invariant Hermitian
+structure $h( , )$on $D = G_{\real}/V$ and an $M$-invariant Hermitian structure $h_M$
+on $\check{D}\cong M/V$. The corresponding distance function shall be denoted by $d$ 
+and $d_M$.
+
+For $g \in G_{\complex}$, let $l(g):\check{D} \rightarrow \check{D}$ denote the 
+left translation by $g$, and $l(g)_*$ the differential of this map. Any 
+$g\in G_{\complex}$ can be expressed as $g = mb$, with $m\in M$ and $b\in B$, because
+$M$ operates transitively on $G_{\complex}/B$. Then,
+\[
+    l(g)_* = l(m)_*\circ l(b)_*
+\]
+
+\begin{lemma}
+At each point of $\check{D}$, the operator norm of the linear transformation
+$l(g)_*$, measured relative to the Hermitian structure $h_M$, is bounded
+by the operator norm of $Adg$ acting on $g$.
+\end{lemma}
+ 
+The above statement implies a relation between the two metric $h$ and $h_M$ on $D$.
+Let $X$ be a holomorphic tangent vector at the point $gV \in G_{\real}/V$ . 
+Then there exists a holomorphic tangent vector $Z$ at the identity coset, such that
+$l(g)_*Z = X$. By construction, the two metric $h$ and $h_M$ agree at the identity 
+coset. With respect to $h$, $l(g)_*$ are isometries, with $h_M$, it is not. But the 
+above statement limits the dialation. Hence:
+
+\begin{corollary}
+If the point $a \in D$ is the $g$-translate of the base point, with $g\in G_{\real}$,
+and if $X$ is a holomorphic tangent vector at $a$, then
+\begin{align*}
+    h(X, X)^{1/2} & \le & ||Ad\inverse{g}|| h_M(X, X)^{1/2} \\
+    h_M(X, X)^{1/2} & \le & ||Ad g}|| h(X,X)^{1/2}
+\end{align*}
+\end{corollary}
+
+For each $z \in U$, I choose an element $g(z) \in G_{\real}$ whose $V$-coset represents
+the point $\tilde{\phi}(z)\in D$. Although $g(z)$ is determined only upto right
+multiplication by an element of $V$, which operates unitarily on $g$, the following 
+statement is meaningful:
+\begin{lemma}
+There exist positive constant $\alpha$, $\beta$, which depends only on the choice
+of the base point in $D$ and on the integer $m$, such that $\Im z > \alpha$ implies
+\[
+    ||Ad\inverse{g(z)}N|| \le \beta\inverse{\Im z}
+\]
+\end{lemma}
+\begin{proof}
+The tangent space to $G_{\real}/K$ at the identity coset is isomorphic as $K$-module
+to $g_0/t_0$. This quotient inherits an inner product from $g_0$, which is invariant
+under $K$ and it can thus be translated into a $G_{\real}$-invariant Riemmanian structure;
+the Riemannian structure then defines a $G_{\real}$-invariant distance function 
+\[
+    d_{G_{\real}/K}
+\]
+because of the $G_{\real}$-invariance of the metrics of $D$, the quotient map
+\[
+    D \cong G_{\real}/V \rightarrow G_{\real}/K
+\]
+has uniformly bounded differential; by renormalizing the metric on $G_{\real}/K$, the
+bound can be arranged to have value one. Now let $G_{\real}=UAK$ be an Iwasawa decomposation.
+A is a vector subgroup of $G_{\real}$, and $U$ for a suitable maximal unipotent subgroup.
+For each $z\in U$, I can choose $k(z)\in K$ such that
+\[
+    Ad\inverse{g(z)}N \in Ad\inverse{k(z)}u_0
+\]
+Because of the uniform boundedness property of $\tilde{\Phi}$, for a suitable positive
+constant $C$, one finds
+\end{proof}
+
+\begin{lemma}
+There exists a neighborhood $U$ of the base point in $\check{D}$, and positive constant
+$\eta, C$ such that $X\in g$, $\norm{X} < \eta, a \in U$ together imply that
+$\exp{X}\circ a \in D$, and $d(\exp{X}\circ a, a) < C\norm{X}$
+\end{lemma}
+
+I now define a mapping $F_z: U - z \rightarrow \check{D}$ by
+\begin{align*}
+    F_z(u) & = & \inverse{g(z)}\exp(-muN)\circ\tilde{\Phi}(z + mu) \\
+\end{align*}
+it is holomorphic and periodic of period one. Let $P$ be a polydisk neighborhood of 
+the base point in $D$. After shrinking $P$, I may assume that the $G_{\real}$-invariant
+metric of $D$ and the Euclidean metric of $P$ are mutually uniformly bounded. 
+
+\begin{lemma}
+There exists positive constants $\alpha, \zeta$, which depend only on the choice of base
+point, the choice of $P$, and on the integer $m$, such that $F_z(u)\in P$ whenever
+$\Im z > \alpha$ and $\abs{\Im u} < \zeta\Im z$
+\end{lemma}
+
+ 
+
+
+
 
 Write $\gamma = \gamma_u\gamma_s$, where $\gamma_u$ is unipotent, and $\gamma_s$
 is semi-simple. Let $m$ be the least integer such that $\gamma_s^m = 1$. Define

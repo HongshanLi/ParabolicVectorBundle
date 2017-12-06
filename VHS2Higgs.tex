@@ -1,25 +1,56 @@
 \documentclass{article}
 \usepackage{mathpkgs}
-In this note, I want to investigate how to construct a Higgs bundle on $X$ from a variation of 
-Hodge structure on $X-D$. 
-
-\section{Extending Hodge filtration}
-Let $(V_U, F)$ be a VHS with integral lattice and quasi-unipotent monodromy on $X-D$.
-Let $V$ be the Deligne canonical extension of $V_U$, how should one extend the Hodge 
-filtration $F$ to $V$, such that the associate graded becomes a Higgs sheaves. 
-
-
-\section{Parabolic sturctures on VHS and the associated Higgs sheaf}
-What are some meaningful geometric interpretation of parabolic structure on VHS and the 
-associated Higgs sheaf?
-
-What are the relation between the two parabolic structure?
-
-\section{Vanishing Thm}
-To prove the vanishing theorem for the Higgs bundle $E$, it seems that we need $E$ to 
-arise from VHS, and show that
+%\newcommand{\Im}{\text{Im}}
+\newcommand{\Gr}{\text{Gr}}
+\begin{document}
+\section{Higgs Bundle Arising from Geometric Variation of Hodge Structure}
+Now suppose that $(V^o, \nabla^o)$ is part of a polarized variation of Hodge structure.
+Let $F^o$ be the Hodge filtration on $V^o$.
+Suppose the monodromy of $\nabla^o)$ is unipotent, then we can extend the filtration $F^o$ 
+to a filtration $F$ on $V_*$ by a theorem of Schmid:
 \[
-    \pushforward{p}(\Gr_FV_Y)^{G} = E
+    F^pV_* = \pushforward{j}(F^{op}V^o)\cap V_*
 \]
+Let $E = \Gr_FV_*$, and $\theta = \Gr_F\nabla_*$, then $(E, \theta)$ is a Higgs bundle with
+wht following properties
+\begin{enumerate}
+\item The Chern classes of $E$, in rational cohomology, all vanish.
+\item The Higgs bundle is semistable in the sense that $\mu(E^\prime) \le \mu(E) = 0$
+    for any proper coherent subsheaf stable under $\theta$
+\item The Higgs field $\theta$ is nilpotent. This follows from the Griffith transversality
+    of $\nabla_*$
+\end{enumerate}
+
+If the monodromy of $\nabla^o$ is only quasi-unipotent, then we need an intermediate step 
+to construct the extension of $F^o$. Let $\pi: Y \rightarrow X$ be the cyclic cover in section 2.
+The monodromy of $\pullback{\pi}\nabla^o$ is unipotent. Therefore, we can extend 
+$\pullback{\pi}F^o$ to a filtration $\bar{F}$ on $\bar{V}$. Let
+\[
+    \phi: (\pushforward{\pi}\bar{V})^{G} \rightarrow V_*
+\]
+be the isomorphism {\color{red}section 2}. Then, we define
+\[
+    F^pV_* := \phi((\pushforward{\pi}\bar{F})^G)
+\]
+We will prove that
+\begin{lemma}
+$(E, \theta) = (\Gr_FV_*, \Gr_F\nabla_*)$ is a Higgs Bundle, \emph{i.e.} $\theta\wedge\theta = 0$.
+\end{lemma}
+
+\begin{lemma}
+The parabolic Chern classes of $E$ is zero
+\end{lemma}
+
+\begin{lemma}
+$E$ is parabolic semistable.
+\end{lemma}
+
+\begin{lemma}
+$\theta$ is nilpotent, \emph{i.e.} $\nabla_*$ has Griffith transversality with respect to $F$.
+\end{lemma}
+\begin{proof}
+
+
+
 
 \end{document}

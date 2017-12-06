@@ -1,0 +1,484 @@
+\documentclass{amsart}
+\usepackage{verbatim,amssymb,amsmath,amscd,latexsym,amsbsy,mathrsfs} 
+\usepackage{graphicx}
+\usepackage[all]{xy}
+ \input{xy}
+ \xyoption{all}
+\usepackage{color}
+\usepackage{xparse}
+\usepackage{mathtools}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{df}[thm]{Definition}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{qsn}[thm]{Question}
+\newtheorem{con}[thm]{Conjecture}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{quest}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+
+
+\DeclareMathOperator*{\im}{im} 
+\DeclareMathOperator*{\coker}{coker} 
+\DeclareMathOperator*{\rank}{rank} 
+\DeclareMathOperator*{\Spec}{Spec}
+\DeclareMathOperator*{\bSpec}{\mathbf{Spec}}
+\DeclareMathOperator*{\Ind}{Ind }
+\DeclareMathOperator*{\Res}{Res }
+\DeclareMathOperator*{\image}{im}
+\DeclareMathOperator*{\into}{\hookrightarrow}
+\DeclareMathOperator*{\DR}{DR }
+\DeclareMathOperator*{\Char}{char}
+\DeclareMathOperator*{\Fr}{{{Fr}}}
+\DeclareMathOperator*{\Kos}{Kos}
+\DeclareMathOperator*{\parc}{par-c} 
+\DeclareMathOperator*{\parch}{par-c} 
+
+\newcommand{\integer}{\mathbb{Z}}
+\newcommand{\chash}{\mathcal{\#}} 
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}} 
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}} 
+\newcommand{\CC}{\mathbb{C}} 
+\newcommand{\Aff}{\mathbb{A}}
+\newcommand{\PP}{\mathbb{P}} 
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\SSS}{\mathbb{S}} 
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\cB}{\mathcal{B}} 
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cP}{\mathcal{P}} 
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cA}{\mathcal{A}} 
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cO}{\mathcal{O}} 
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cp}{\mathpzc{p}}
+\newcommand{\cV}{\mathcal{V}} 
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}} 
+\newcommand{\cL}{\mathcal{L}} 
+\newcommand{\cEnd}{\mathcal{E}nd}
+\newcommand{\cK}{\mathcal{K}} 
+\newcommand{\cm}{\mathpzc{m}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cG}{\mathcal{G}} 
+\newcommand{\minus}{\mathcal{n}}
+\newcommand {\X} {\mathcal{X}}
+\newcommand{\dirlim} {\displaystyle \lim_{\longrightarrow}}
+\newcommand{\invlim} {\displaystyle \lim_{\longleftarrow}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand {\V} {\mathcal{V}}
+\newcommand {\bV} {\overline{\mathcal{V}}}
+\newcommand {\bnabla} {\overline{\nabla}}
+\newcommand {\bF} {\overline{F}}
+\newcommand {\cY} {\mathcal{Y}}
+\newcommand {\Om} {\tilde \Omega}
+\newcommand {\cH} {\mathcal{H}}
+\newcommand {\T} {\mathcal{T}}
+
+\newcommand{\onto}{\twoheadrightarrow}
+
+\newcommand {\N} {{\mathbb N}}
+\newcommand {\C} {{\mathbb C}}
+\newcommand {\R} {{\mathbb R}}
+\newcommand {\Z} {{\mathbb Z}}
+\newcommand {\Q} {{\mathbb Q}}
+\newcommand {\HH} {{\mathcal H}}
+\newcommand {\F} {{\mathcal F}}
+\newcommand {\ga} {{\mathcal G \mathcal A}}
+\newcommand {\B} {{\mathbb B}}
+\newcommand {\E} {{\mathcal E}}
+\newcommand {\dt} {{\bullet}}
+\newcommand {\G} {{\mathbb G}}
+\newcommand {\M} {{\mathcal M}}
+\newcommand {\OO} {{\mathcal O}}
+\newcommand {\A} {\mathbb{A}}
+\newcommand {\I} {\mathcal{I}}
+\newcommand{\pullback}[1]{{#1}^*}
+\newcommand{\pushforward}[1]{{#1}_*}
+
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+%
+ \begin{document}
+\title{Notes on parabolic Higgs bundles}
+% \author{
+%         ---   
+% }
+% \thanks {Partially supported by the NSF }
+\address{Department of Mathematics\\
+ Purdue University\\
+ West Lafayette, IN 47907\\
+U.S.A.}
+ \maketitle
+
+\section{parabolic bundles}
+
+Let $X$ be a smooth projective complex variety with a reduced simple  normal crossing
+divisor $D=\sum D_i$. Let $j:U=X-D\to X$ denote the inclusion of the complement. 
+We fix this notation throughout the paper.
+For our purposes, a parabolic bundle on $(X,D)$ consists of a
+vector bundle $E$ on $X$ with an increasing $\R$-indexed filtration $E_\alpha\subset E(*D)$,
+ by locally free $\OO_X$-modules such that
+\begin{enumerate}
+\item[P1.] $E_0=E$
+\item[P2.] $E_{\alpha+1} = E_\alpha(D) $
+\item[P3.] $E_{\alpha+c} = E_{\alpha}$ for some
+  $c>0$ independent of $\alpha$.
+\item[P4.] $Gr_\alpha E:= E_{\alpha}/E_{\alpha-\epsilon}$, $0<\epsilon\ll
+  1$, is a locally free $\OO_D$-module. 
+\end{enumerate}
+This  definition is equivalent, with minor changes in notation, to the
+definition by Yokogawa  \cite[3.1]{yokogawa}. 
+%The last axiom is omitted in some
+%references but it appears to be important;
+% it implies condition \cite[3.2(1)]{biswas} needed below.)
+These conditions ensure that the filtration has a finite number of
+jumps in an interval, i.e.  values $\alpha$ such that $Gr_{\alpha_i}E\not=0$. 
+We arrange the jumps in $[0,1)$ in increasing order  $0\le \alpha_1< \alpha_2<\ldots \alpha_\ell <1$.
+These numbers are called weights.
+%$$E_{\alpha_i}\subsetneqq E_{\alpha_{i+1}}$$ 
+The  subsheaves $E_{\alpha_i}\subset E(D)$ determine the whole filtration. 
+Setting $E_i= E_{\alpha_i}$ gives a finite filtration on $E(D)$ called a
+quasiparabolic structure. From this point of view, a parabolic
+bundle  is  a bundle with a quasiparabolic structure plus a choice of
+weights. Parabolic bundles will be denoted by $E_*$.
+
+
+We describe a few  basic examples. 
+
+\begin{ex}\label{ex:trivial}
+ Any vector bundle $E$ can be given a parabolic structure with integral weights and  $E_i= E(iD)$. We refer to this
+ as a trivial parabolic bundle.
+\end{ex}
+
+
+\begin{ex}\label{ex:paraline}
+ Choose a line bundle $L$ and
+coefficients $\beta_i \in [0,1)$ and let
+\begin{equation}
+  \label{eq:L}
+L_\alpha= L(\sum \lfloor \alpha+\beta_i\rfloor D_i)  
+\end{equation}
+\end{ex}
+
+Any parabolic line bundle is of this form. Zariski locally, any
+parabolic bundle is a sum of parabolic line bundles.
+
+\begin{ex}\label{ex:paraDel}
+ Suppose that $(V^o,\nabla^o)$ is  a  vector bundle with an integrable connection with regular singularities. By Deligne \cite{deligne}
+there exists a unique extension
+$$\nabla_\alpha:V_\alpha\to \Omega_{X}^1(\log D)\otimes V_\alpha$$
+with residues having real part in $[ -\alpha,1-\alpha)$. This again forms a parabolic bundle, that we refer to as the Deligne parabolic bundle.
+If the monodromy of $\nabla^o$  around components of $D$ is unipotent, then $V_*$ has trivial 
+parabolic structure. This is because the eigenvalues of the monodromy of $\nabla^o$ around 
+components of $D$ can is given by $\exp(2\pi i\alpha)$. 
+So if the monodromy is unipotent, $\alpha$ must be integers. 
+\end{ex}
+
+A parabolic Higgs bundle on $(X,D)$ is a parabolic bundle $E_*$ together
+with holomorphic map
+$$\theta:E\to \Omega_X^1(\log D)\otimes E$$
+such that
+$$\theta\wedge \theta=0$$
+and
+$$\theta(E_\alpha)\subseteq E_\alpha$$
+
+\section{Biswas's correspondence}
+We will assume in this section  that the weights are rational with denominator dividing a fixed positive integer $N$.
+ Recall that Kawamata \cite[thm17]{kawamata} has constructed a smooth projective variety $Y$, and a Galois covering
+$\pi:Y\to X$, such that $\pi^*D_i = k_iN (
+\tilde D_i)$ for some $k_i>0$, where $\tilde D_i=(\pi^*D_i)_{red}$.
+Let $G$ denote the Galois group. A $G$-equivariant vector bundle on
+$Y$, is a bundle $p:V\to Y$ (viewed geometrically rather than as a
+sheaf) on which $G$ acts compatibly with $p$.  
+
+We list some basic classes of examples.
+
+\begin{ex}\label{ex:pullbackVB}
+ $X$, then $\pi^*V'$  can made into a $G$-equivariant bundle, so that the projections $p$
+$$
+\xymatrix{
+ \pi^*V'\ar[r]\ar[d]^{p} & V'\ar[d]^{p} \\ 
+ Y\ar[r]^{\pi} & X
+/}
+$$
+are compatible with  the $G$-action. 
+\end{ex}
+
+\begin{ex}\label{ex:equiLB}
+ The line bundle $\OO_Y(\tilde D_i)$ has an  equivariant structure compatible with the one on $\pi^*\OO_X(D_i)$ under the isomorphism
+$\OO_Y(\tilde D_i)^{\otimes k_iN}\cong \pi^* \OO_X(D_i)$.
+\end{ex}
+
+
+\begin{thm}[Biswas {\cite{biswas}}]\label{thm:biswas}
+  There is an equivalence $E_*\to \tilde E$ between the category of 
+  parabolic bundles on $X$ with weights in $\frac{1}{N}\Z$ and
+  $G$-equivariant  bundles on $Y$. 
+\end{thm}
+
+We recall the construction in one direction. Given an equivariant bundle $\tilde E$ on
+$Y$, we obtain a parabolic bundle
+$$E_\alpha = \pi_*(\E\otimes \OO_Y(\lfloor \alpha \pi^*D\rfloor))^G$$
+where $ \lfloor \alpha \pi^*D\rfloor=\sum_i \lfloor \alpha k_iN\rfloor
+\tilde D_i$.  
+
+
+Suppose that $(V^o,\nabla^o)$ is a vector bundle with connection satisfying the assumptions of 
+example \ref{ex:paraDel}. In addition suppose that the eigenvalues of the   monodromy around $D$
+are $N$th roots of unity. Then the weights of the  Deligne  parabolic bundle lie in  
+$\frac{1}{N}\Z$.
+Furthermore $(\tilde V^o,\Box^o)=(\pi^*V^o,\pi^*\nabla^o)$ has unipotent local monodromies.
+Let $(V_*,\nabla_*)$  and $(\tilde V,\Box )$ denote Deligne's extensions of $V^o$ and $\tilde V^o$.
+
+We prove the following
+\begin{lemma}\label{lemma2.4} 
+There is an isomorphism of vector bundle
+\[
+    \phi : \pullback{\pi}V_* \rightarrow \tilde V
+\]
+sending flat sections of $\pullback{\pi}\nabla_*$ to flat sections of $\Box$.
+\end{lemma}
+\begin{proof}
+We will describe this morphism locally, and show it glues.
+Take a point $y \in Y$, and let $x = \pi(y)$. Let $W$ and $U$ be polydisc neighborhoods
+of $y$ and $x$, with coordinates $(y_1,y_2,\cdots,y_d)$ and $(x_1,x_2,\cdots,x_d)$, respectively.
+Without loss of generality, we may assume that $\tilde D_i$ is locally defined by $y_i$ and $D_i$
+is locally defined by $x_i$. As $\pullback{\pi}D_i = k_iN\tilde D_i$, we have
+\[
+    x_i = y_i^{k_iN}
+\]
+On $U-D$ let $<s_1,\cdots,s_r>$ be a free basis of $V^o$,the connection matrix of $\nabla_*$ be 
+\[
+    A_1\frac{dx_1}{x_1} + A_2\frac{dx_2}{x_2} + \cdots + A_s\frac{dx_s}{x_s}
+\]
+The generalized eigenvalues of $A_i$ are $\alpha_{i}$, the weights of $V_*$ on $D_i$. 
+So on $W$, with respect to the frame $<e_1,\cdots,e_r> = \pullback{\pi}<s_1,\cdots,s_r>$ 
+the connection matrix of $\pullback{\pi}\nabla_*$ is 
+\[
+    k_1NA_1\frac{dw_1}{w_1} + k_2NA_2\frac{dw_2}{w_2} + \cdots + k_sNA_s\frac{dw_s}{w_s}
+\]
+Write $B_i = k_iNA_i$. Let $J(B_i)$ be the Jordan canonical form of $B_i$, and let $D_i$ be 
+the invertible part of $J(B_i)$. Write $N_i = B_i - D_i$. Then, $N_i$ is nilpotent, and the
+conection matrix of $\tilde V$, with respect to the frame $<e_1,\cdots,e_r>$ is
+\[
+    N_1\frac{dy_1}{y_1} + N_2\frac{dy_2}{y_2} + \cdots + N_s\frac{dy_s}{y_s}
+\]
+Let 
+\[
+    F = \exp{-(N_1\log y_1 + N_2\log y_2 + \cdots + N_s\log y_s)}
+\]
+Then, the flat sections of $\tilde V$ has coordinates
+\[
+    F_1, F_2,\cdots, F_r
+\]
+where $F_i$ is the $i$-th column of $F$.
+
+Similarly, let 
+\begin{align*}
+    G & = \exp{-(B_1\log y_1 + B_2\log y_2 + \cdots + B_s\log y_s)} \\
+      & = \prod\limits_{i=1}^{s}y_i^{-D_i}F
+\end{align*}
+Then, the flat sections of $\pullback{\pi}\nabla_*$ has coordinates
+\[
+    G_1, G_2,\cdots, G_r
+\]
+where $G_i$ is the $i$-th column of $G$.
+
+Let $d_i^j$ be the $j$-th eigenvalue of $D_i$. The map
+\begin{align*}
+    \pullback{\pi}V_* & \rightarrow \tilde V \\
+                  e_j & \mapsto \prod\limits_{j=1}^{s}y_j^{d_i^j}e_j
+\end{align*}
+sends flat sections to flat sections. Hence, it glues to a morphism of vector bundles
+\[
+    \phi: \pullback{\pi}V_* \rightarrow \tilde V
+\]
+\end{proof}
+
+
+\begin{lemma}
+$\tilde V$ admits a $G$-equivariant action, 
+and Biswas' construction applied to  $\tilde V$ yields $V_*$.
+\end{lemma}
+
+\begin{proof}
+Let $\phi: \pullback{\pi}V_* \rightarrow \tilde V$ be the morphism from \ref{lemma2.4}. 
+Set $d_i$ to be the largest eigenvalue of $D_i$. Then,
+\[
+    \phi\otimes O_Y(\sum\limits_{i=1}^{s}d_i\tilde{D_i}) :
+        \pullback{\pi}V_*\otimes O_Y(\sum\limits_{i=1}^{s}d_i\tilde{D_i})
+        \rightarrow \tilde V
+\]
+is an isomorphism. Therefore, we can define an equivariant $G$-action on $\tilde V$ via
+$\phi$. Explicitly, write the Galois group of $\pi: Y\rightarrow X$ as
+\[
+    G = \bigoplus\limits_{i=1}^{s}\integer/k_iN
+\]
+Let $\mu_i$ be a generator of $\integer/k_iN$, \emph{i.e.} a primitive $k_iN$-th root of unity.
+Then
+\[
+    \mu_i\cdot e_j = y_i^{d_i^j}e_j
+\]
+where $d_i^j$ is the $j$-th eigenvalue of $D_i$.
+
+The $G$-invariant sections of $\tilde V$ are precisely the $G$-invariant sections of 
+$\pullback{\pi}V_*$, and $G$-invariant section of $\pullback{\pi}V_*$ are $V_*$. 
+Therefore, we have the identification
+\[
+    (\pushforward{\pi}\tilde V)^G = V_*
+\]
+
+\newcommand{\parabolic}{(\pushforward{\pi}\tilde V\otimes O_Y(\floor{\alpha\pullback{\pi}D}))^G}
+To show $\parabolic$ recovers the parabolic structure of $V_*$, we show it locally by 
+decomposing them into sum of line bundles. Hence, it is enough to assume $V_*$ is
+a line bundle. 
+
+Use the notation from \ref{lemma2.4}. $A_i = \alpha_i$ for some rational number $\alpha_i$.
+The parabolic structure of $V_*$ is thus
+\[
+    V_{*\alpha} = O_X(\floor{\alpha - \alpha_1}D_1 + \cdots + \floor{\alpha - \alpha_s}D_s)
+\]
+which is the parabolic structure of $\parabolic$. 
+\end{proof}
+
+
+
+Biswas's correspondence  extends to Higgs bundles as well \cite[thm 5.5]{biswas2}.
+Now suppose that $(V^o,\nabla^o)$ is part of a polarized variation of Hodge structure {\color{red} etc.}
+
+
+\section{Parabolic Chern classes}
+
+Given a parabolic line bundle with notation as in \ref{ex:paraline}
+$${\parc}_1(L_*)= c_1(L)\pm \sum\beta_i[D_i]$$
+ {\color{red}At this point, we need to check signs. The correct sign is the one which makes
+ $\pi^* \parc_1(L_*)=  c_1(\mathcal{L})$ true, where $\mathcal{L}$ corresponds to $L_*$ under Biswas.}
+
+ Given a parabolic bundle $E_*$, the top exterior power $\det E$ carries an induced parabolic structure.
+ Set $\parc_1(E_*)= \parc_1(\det E_*)$.
+Fix an ample line bundle $H$ on $X$.  Let $d=\dim X$.
+The parabolic degree of a parabolic bundle $E_*$ is $c_1(\det E_*)\cdot H^{d-1}$.
+We can define (semi)stability of parabolic and parabolic Higgs bundles using this \cite{my, yokogawa}.
+Under Biswas's correspondence semistable parabolic bundles (Higgs bundles) with rational weights correspond
+to semistable equivariant (Higgs) bundles.
+ 
+ 
+Given a parabolic bundle $E_*$, let $p:Fl(E)\to X$ denote the full flag bundle of $E$. The pullback $p^*E$ 
+carries a filtration $F^i\subset E$ by subbundles such that  associated graded $G^i = F^i/F^{i+1}$ are line bundles.
+The parabolic structure on $E$ can be pulled back to  a parabolic structure on  $p^*E$ along $\pi^*D$, 
+and $G^i$ carry induced parabolic structures.
+
+\begin{lemma}
+The classes $c_i$ defined below
+$$1+c_1+ c_2+\ldots = \prod (1+\parc(G^i_*))$$
+are pullbacks of classes  $\parc_i(E_*)\in H^{2i}(X,\R)$.
+\end{lemma}
+
+Since the map $H^*(X)\to H^*(Fl(E))$ is injective, the above property determines the above classes.
+The following is stated in \cite[4.6]{biswas2}.
+
+\begin{lemma}
+ Suppose that $E_*$ has weights in $\frac{1}{N}\Z$. Let $p:Y\to X$ and $\mathcal{E}$ be as in theorem \ref{thm:biswas},
+ then $p^*\parc_i(E_*)= c_i(\E)$.
+\end{lemma}
+
+\begin{proof}
+ {\color{red} Fill in}
+\end{proof}
+
+
+\section{Vanishing}
+
+\begin{prop}
+ Let $(E_*,\theta)$ be a semistable Higgs bundle with zero parabolic Chern classes. There exists
+ a parabolic bundle $(E_*',\theta')$ with  the same properties and rational weights with  $(E,\theta)=(E', \theta')$.
+\end{prop}
+
+\begin{proof}
+{\color{red} Fill in} 
+\end{proof}
+
+Given a Higgs bundle $(E,\theta)$, we have complex
+$$DR(E,\theta) = E\stackrel{\theta}{\to} \Omega_X(\log D)\otimes E\to \ldots$$
+
+\begin{thm}
+ Let $(E_*,\theta)$ be a  semistable parabolic Higgs bundle on $X$ with vanishing Chern classes and with $\theta$ nilpotent.
+ Then
+ $$H^i(DR(E,\theta)\otimes L)=0$$
+ for $i>d$.
+\end{thm}
+ 
+ 
+ 
+\begin{proof}[Sketch]
+ 
+
+{\color{red}
+ Use above prop to reduce to case, where $E$ has rational weights.
+By Biswas, it 
+corresponds to $G$-equivariant Higgs bundle $(\tilde E,\tilde \theta)$ on $Y$.
+We can apply the first main theorem of \cite{arapura} to conclude
+$$H^i(Y, DR(\tilde E,\theta)\otimes \pi^*L)=0$$
+Now take $G$-invariants.}
+\end{proof}
+
+%Further ideas:
+%\begin{enumerate}
+%\item  It would be good to work out explicitly the case of a variation of Hodge
+%structure with quasiunipotent local monodromies in some detail.
+%
+%\item If $(E_*, \theta)$ is a parabolic Higgs bundles with real weights and
+%the assumptions (V1), (V2), (V3), then I think vanishing should still
+%hold. The idea is that by fixing the quasiparabolic structure and perturbing the weights slightly, we can find 
+%parabolic bundle  $\tilde E_*$ with rational weights and $E_0=\tilde E_0$,
+%such that the assumptions (V1), (V2), (V3) still
+%hold. The idea for semistability is explained on the last page of
+%\cite{biswas} in the non Higgs case. For (V1), recall that
+%$\parc_i(E_*)$ is a linear comb. of
+%rational cohomology classes with coefficients involving $\alpha_i$.  Now use the following
+% fact, whose proof I omit:
+%
+%\begin{lemma}
+%  If $A$ is a rational $m\times n$ matrix, then for any  solution
+%  of $Av=0$ with $v\in \R^n$ and $\epsilon>0$ we can find a  rational solution $Av'=0$, $v'\in
+%  \Q^n$, with $||v-v'||<\epsilon$.
+%\end{lemma}
+%This will  show that $\parc_i(E_*)=0\Rightarrow \parc_i(\tilde E_*)=0$
+%\end{enumerate}
+%
+
+ \begin{thebibliography}{99}
+ \bibitem[A]{arapura} D. Arapura, Kodaira-Saito vanishing via Higgs bundles in
+   characteristic $p$, Crelle's J. (to appear)
+
+ \bibitem[B1]{biswas} I. Biswas, Parabolic bundles as orbifold bundles,
+   Duke (1997)
+
+ \bibitem[B2]{biswas2} I. Biswas, Chern classes of parabolic bundles,
+   J. Math Kyoto (1998)
+   
+   \bibitem[D]{deligne} P. Deligne,
+   
+   
+ \bibitem[IS]{is} J. Iyer, C. Simpson, A relation between the
+   parabolic Chern characters of the de Rham bundles, Math Ann (2007)
+ \bibitem[K]{kawamata} Y. Kawamata, Characterization of abelian
+   varieties, Composito (1981)
+ \bibitem[MY]{my} Maruyama, Yokogawa, Moduli of parabolic bundles,
+   Math Ann (1992)
+ \bibitem[Y1]{yokogawa1} Yokogawa, Compactification of moduli of parabolic sheaves and
+moduli of parabolic Higgs sheaves, J. Math. Kyoto (1993)
+
+\bibitem[Y2]{yokogawa} Yokogawa, Infinitessimal deformations of
+  parabolic Higgs sheaves, Int. J Math (1995)
+ \end{thebibliography}
+\end{document}
